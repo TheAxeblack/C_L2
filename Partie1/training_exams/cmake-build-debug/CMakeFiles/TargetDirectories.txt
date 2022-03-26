@@ -1,3 +1,0 @@
-/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/training_exams/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/training_exams/cmake-build-debug/CMakeFiles/training_exams.dir
-/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/training_exams/cmake-build-debug/CMakeFiles/edit_cache.dir
