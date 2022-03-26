@@ -73,3 +73,27 @@ liste insere_element_liste_ordonnee(liste l, element elem) {
     p->suivant = cell_debut;
     return l;
 }
+
+liste recopie(liste l) {
+    liste p = l, p2 = liste_vide(), resultat = liste_vide();
+    while (!est_liste_vide(p)) {
+        liste new = inserer_element_liste(liste_vide(), p->objet);
+        if (est_liste_vide(resultat))
+            resultat = new;
+        else {
+            p2->suivant = new;
+            p2 = p2->suivant;
+        }
+        p = p->suivant;
+    }
+    return l;
+}
+
+liste recopie_liste_recu2(liste l) {
+    liste cell_new = liste_vide();
+    if (est_liste_vide(l))
+        return liste_vide();
+    cell_new = inserer_element_liste(liste_vide(), l->objet);
+    cell_new->suivant = recopie_liste_recu2(l->suivant);
+    return cell_new;
+}

@@ -31,4 +31,7 @@ liste liste_cat(liste l1, liste l2);
 
 liste insere_element_liste_ordonnee(liste l, element elem);
 
+liste recopie(liste l);
+
+liste recopie_liste_recu2(liste l);
 #endif

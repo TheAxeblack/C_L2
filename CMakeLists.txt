@@ -1,0 +1,187 @@
+cmake_minimum_required(VERSION 3.13)
+project(C C)
+
+set(CMAKE_C_STANDARD 11)
+
+include_directories(.)
+include_directories(Partie1)
+include_directories(Partie1/Archive_L3_2020_-_2021)
+include_directories(Partie1/TD)
+include_directories(Partie1/TP)
+include_directories(Partie1/TP/tp1)
+include_directories(Partie1/TP/tp2)
+include_directories(Partie1/TP/tp3)
+include_directories(Partie1/TP/tp4)
+include_directories(Partie1/TP/tp5)
+include_directories(Partie1/TP/tp7)
+include_directories(Partie1/TP/tp7/Rendu.LECUYER)
+include_directories(Partie1/TP/tp8)
+include_directories(Partie1/TP/tp8/chomp)
+include_directories(Partie1/training_exams)
+include_directories(Partie1/training_exams/ex2)
+include_directories(Partie2)
+include_directories(Partie2/TD)
+include_directories(Partie2/TP)
+include_directories(Partie2/TP/tp1)
+include_directories(Partie2/TP/tp1/calculatrice)
+include_directories(Partie2/TP/tp2)
+include_directories(Partie2/TP/tp2/Rendu_tp2_LECUYER)
+include_directories(Partie2/TP/tp2/Rendu_tp2_LECUYER/tp_anne_canteaut)
+include_directories(Partie2/TP/tp3)
+
+add_executable(C
+        Partie1/Archive_L3_2020_-_2021/Archive_complete_correction_tps_C_S3/Correction_jeu_du_pendu.c
+        Partie1/Archive_L3_2020_-_2021/Archive_correction_premier_partiel_C_S3/premier_partiel_C_code.c
+        Partie1/Archive_L3_2020_-_2021/Archive_correction_second_partiel_C_S3/second_partiel_C_code.c
+        Partie1/TD/decode.c
+        Partie1/TD/degre2.c
+        Partie1/TD/equivalence.c
+        Partie1/TD/factorielle.c
+        Partie1/TD/min_max.c
+        Partie1/TD/pgcd.c
+        Partie1/TD/puissance.c
+        Partie1/TP/tp1/prog/Rendu.LECUYER/affectation.c
+        Partie1/TP/tp1/prog/Rendu.LECUYER/bonjour.c
+        Partie1/TP/tp1/prog/Rendu.LECUYER/calculs_simples.c
+        Partie1/TP/tp1/prog/Rendu.LECUYER/maths.c
+        Partie1/TP/tp1/prog/Rendu.LECUYER/permutation.c
+        Partie1/TP/tp1/prog/Rendu.LECUYER/random.c
+        Partie1/TP/tp1/prog/affectation.c
+        Partie1/TP/tp1/prog/bissextiles.c
+        Partie1/TP/tp1/prog/bonjour.c
+        Partie1/TP/tp1/prog/calculs_simples.c
+        Partie1/TP/tp1/prog/maths.c
+        Partie1/TP/tp1/prog/pair_impair.c
+        Partie1/TP/tp1/prog/permutation.c
+        Partie1/TP/tp1/prog/random.c
+        Partie1/TP/tp2/Rendu.LECUYER/carre.c
+        Partie1/TP/tp2/Rendu.LECUYER/decode.c
+        Partie1/TP/tp2/Rendu.LECUYER/factorielle.c
+        Partie1/TP/tp2/Rendu.LECUYER/harmonique.c
+        Partie1/TP/tp2/Rendu.LECUYER/instructions_repetitives.c
+        Partie1/TP/tp2/Rendu.LECUYER/ligne.c
+        Partie1/TP/tp2/Rendu.LECUYER/min-max.c
+        Partie1/TP/tp2/Rendu.LECUYER/pgcd.c
+        "Partie1/TP/tp2/Rendu.LECUYER/puissance(1).c"
+        "Partie1/TP/tp2/Rendu.LECUYER/puissance(2).c"
+        Partie1/TP/tp2/Rendu.LECUYER/puissance.c
+        "Partie1/TP/tp2/Rendu.LECUYER/rectangle(1).c"
+        "Partie1/TP/tp2/Rendu.LECUYER/rectangle(2).c"
+        Partie1/TP/tp2/Rendu.LECUYER/rectangle.c
+        Partie1/TP/tp2/Rendu.LECUYER/second_degre.c
+        Partie1/TP/tp2/Rendu.LECUYER/table_mult.c
+        "Partie1/TP/tp2/Rendu.LECUYER/triangle(1).c"
+        "Partie1/TP/tp2/Rendu.LECUYER/triangle(2).c"
+        Partie1/TP/tp2/Rendu.LECUYER/triangle.c
+        Partie1/TP/tp2/carre.c
+        Partie1/TP/tp2/decode.c
+        Partie1/TP/tp2/factorielle.c
+        Partie1/TP/tp2/harmonique.c
+        Partie1/TP/tp2/instructions_repetitives.c
+        Partie1/TP/tp2/ligne.c
+        Partie1/TP/tp2/min-max.c
+        Partie1/TP/tp2/pgcd.c
+        "Partie1/TP/tp2/puissance(1).c"
+        "Partie1/TP/tp2/puissance(2).c"
+        Partie1/TP/tp2/puissance.c
+        "Partie1/TP/tp2/rectangle(1).c"
+        "Partie1/TP/tp2/rectangle(2).c"
+        Partie1/TP/tp2/rectangle.c
+        "Partie1/TP/tp2/second_degre(1).c"
+        "Partie1/TP/tp2/second_degre(2).c"
+        Partie1/TP/tp2/second_degre.c
+        "Partie1/TP/tp2/table_mult(1).c"
+        "Partie1/TP/tp2/table_mult(2).c"
+        Partie1/TP/tp2/table_mult.c
+        "Partie1/TP/tp2/triangle(1).c"
+        "Partie1/TP/tp2/triangle(2).c"
+        Partie1/TP/tp2/triangle.c
+        Partie1/TP/tp3/Rendu.LECUYER/nb_mystere_hguess.c
+        Partie1/TP/tp3/Rendu.LECUYER/nb_mystere_mguess.c
+        Partie1/TP/tp3/nb_mystere_hguess.c
+        Partie1/TP/tp3/nb_mystere_mguess.c
+        Partie1/TP/tp4/Rendu.LECUYER/bases.c
+        Partie1/TP/tp4/Rendu.LECUYER/deplacement.c
+        Partie1/TP/tp4/Rendu.LECUYER/des.c
+        Partie1/TP/tp4/Rendu.LECUYER/eratosthene.c
+        Partie1/TP/tp4/Rendu.LECUYER/manip_tabs.c
+        Partie1/TP/tp4/Rendu.LECUYER/matrice2.c
+        Partie1/TP/tp4/Rendu.LECUYER/matrices1.c
+        Partie1/TP/tp4/Rendu.LECUYER/matrices2.c
+        Partie1/TP/tp4/Rendu.LECUYER/tri_volee.c
+        Partie1/TP/tp4/Rendu.LECUYER/triangle_pascal.c
+        Partie1/TP/tp4/bases.c
+        Partie1/TP/tp4/deplacement.c
+        Partie1/TP/tp4/des.c
+        Partie1/TP/tp4/eratosthene.c
+        Partie1/TP/tp4/manip_tabs.c
+        Partie1/TP/tp4/matrice2.c
+        Partie1/TP/tp4/matrices1.c
+        Partie1/TP/tp4/matrices2.c
+        Partie1/TP/tp4/tri_volee.c
+        Partie1/TP/tp4/triangle_pascal.c
+        Partie1/TP/tp5/mesfcts_str.c
+        Partie1/TP/tp7/Rendu.LECUYER/lecture.c
+        Partie1/TP/tp7/Rendu.LECUYER/lecture.h
+        Partie1/TP/tp7/Rendu.LECUYER/main.c
+        Partie1/TP/tp7/Rendu.LECUYER/recherche.c
+        Partie1/TP/tp7/Rendu.LECUYER/tri.c
+        Partie1/TP/tp7/lecture.c
+        Partie1/TP/tp7/lecture.h
+        Partie1/TP/tp7/main.c
+        Partie1/TP/tp7/recherche.c
+        Partie1/TP/tp7/tri.c
+        Partie1/TP/tp8/chomp/chomp.c
+        Partie1/TP/tp8/chomp/types.h
+        Partie1/TP/tp8/rectangle.c
+        Partie1/TP/tp8/rectangle_clic.c
+        Partie1/training_exams/ex2/ex2.c
+        Partie1/training_exams/ex2/ex2.h
+        Partie2/TD/td1_1.c
+        Partie2/TD/td1_13.c
+        Partie2/TD/td1_3.c
+        Partie2/TD/td1_5.c
+        Partie2/TD/td2_1.c
+        Partie2/TD/td2_4.c
+        Partie2/TD/td2_9.c
+        Partie2/TP/tp1/calculatrice/calculatrice.h
+        Partie2/TP/tp1/calculatrice/fonctions_non_std.c
+        Partie2/TP/tp1/calculatrice/fonctions_std.c
+        Partie2/TP/tp1/calculatrice/fonctions_trigo.c
+        Partie2/TP/tp1/calculatrice/main.c
+        Partie2/TP/tp1/calculatrice/utilitaire.c
+        Partie2/TP/tp1/Rendu.LECUYER/ackermann.c
+        Partie2/TP/tp1/Rendu.LECUYER/triangle.c
+        Partie2/TP/tp1/Rendu.LECUYER/types.c
+        Partie2/TP/tp1/ackermann.c
+        Partie2/TP/tp1/triangle.c
+        Partie2/TP/tp1/types.c
+        Partie2/TP/tp2/Rendu_tp2_LECUYER/tp_anne_canteaut/exemple.c
+        Partie2/TP/tp2/Rendu_tp2_LECUYER/allocation.c
+        Partie2/TP/tp2/Rendu_tp2_LECUYER/allocation.h
+        Partie2/TP/tp2/Rendu_tp2_LECUYER/erreur.c
+        Partie2/TP/tp2/Rendu_tp2_LECUYER/erreur.h
+        Partie2/TP/tp2/Rendu_tp2_LECUYER/ex1.c
+        Partie2/TP/tp2/Rendu_tp2_LECUYER/ex3.c
+        Partie2/TP/tp2/Rendu_tp2_LECUYER/main.c
+        Partie2/TP/tp2/Rendu_tp2_LECUYER/pascal.c
+        Partie2/TP/tp2/Rendu_tp2_LECUYER/tp2.h
+        Partie2/TP/tp2/tp_anne_canteaut/exemple.c
+        Partie2/TP/tp2/allocation.c
+        Partie2/TP/tp2/allocation.h
+        Partie2/TP/tp2/erreur.c
+        Partie2/TP/tp2/erreur.h
+        Partie2/TP/tp2/ex1.c
+        Partie2/TP/tp2/ex3.c
+        Partie2/TP/tp2/main.c
+        Partie2/TP/tp2/pascal.c
+        Partie2/TP/tp2/tp2.h
+        Partie2/TP/tp3/ex1.c
+        Partie2/TP/tp3/file.c
+        Partie2/TP/tp3/file.h
+        Partie2/TP/tp3/liste.c
+        Partie2/TP/tp3/liste.h
+        Partie2/TP/tp3/main.c
+        Partie2/TP/tp3/pile.c
+        Partie2/TP/tp3/pile.h
+        Partie2/TP/tp3/tp3.h)
