@@ -1,0 +1,35 @@
+# -*- mode: makefile-gmake -*-
+#exemple de Makefile utilisant quelques raccourcis
+
+CC = gcc #compilateur
+CFLAGS = -W -Wall -pedantic -std=c89 -O3 #option
+LDFLAGS =  #-lm  #librairies par math rajouter - lm
+
+LISTEPROG = mon_erreur.o main.o malibchaine.o
+
+#on peut mettre une dependance
+#all : mon_prog clean
+
+mon_prog : $(LISTEPROG)
+	$(CC)  $(LISTEPROG) -o $@ $(lDFLAGS) 
+#dans la ligne du dessus il y a une tabulation en debut ligne !! 
+#mettre -o $@ à la place de -o main fait que le programme s'appelera mon_prog
+#on peut mettre $^ à la place de $(LISTEPROG) dans la 2eme ligne
+#$^ represente toutes les dependances (cad a droite des :), 
+#$@ la cible (cad a gauche des :)
+#la 2eme ligne pourrait correspondre a 
+#	$(CC)  $^ -o $@ $(lDFLAGS) 
+#ne pas oublier la tabulation a gauche
+
+
+#on peut mettre %o:%c a la place des 3 lignes au dessus
+
+#on peut aussi affecter une ligne pour compiler d'une certaine maniere
+#version avec .h, $< représente la premiere dependance donc le fichier .c ici,
+#$@ represente la cible donc le fichier .o
+%o:%c %h
+	$(CC) -o $@ -c $< $(CFLAGS)
+
+
+clean :
+	rm -f *.o

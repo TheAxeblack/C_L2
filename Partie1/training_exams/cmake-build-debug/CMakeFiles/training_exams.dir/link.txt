@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/training_exams.dir/ex2/ex2.c.o  -o training_exams 

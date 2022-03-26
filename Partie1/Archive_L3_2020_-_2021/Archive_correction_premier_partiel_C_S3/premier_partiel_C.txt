@@ -1,0 +1,73 @@
+Q1 -
+
+Sémantiquement, les boucles for et while sont équivalentes, on peut écrire l'une avec l'autre sans souci
+et c'est même démontrable (C.F. P.Ezequel).
+La boucle Do While en revanche possède une différence, elle execute une fois son contenu avant de procéder
+à la vérification demandée.
+
+Q2 -
+
+L'exercice que je proposerais est le suivant :
+
+Executez ce code :
+
+#include <stdlib.h>
+#include <stdio.h>
+
+int main(void){
+  int i = 0;
+
+  i = 0;
+  while(i > 0){
+    i++;
+  }
+
+  printf("%d\n", i);
+
+  do{
+    i++;
+  }while(i > 0);
+
+  printf("%d\n", i);
+  exit(0);
+}
+
+Que vaudra i au premier affichage ? (réponse : 0).
+Que va-t-il se passer par la suite ? Pourquoi ? (réponse : une boucle infinie. En effet i est incrémenté
+qu'elle que soit la condition d'arret du do while, c'est pourquoi i deviendra supérieur à 0, il en suivra donc
+une boucle infinie).
+
+Cet exercice met en lumière qu'il faut faire attention en utilisant la boucle do while car la boucle execute
+la/les instruction(s) une fois en dépit de la condition d'arret, ce qui peut mener à des erreurs ou à une boucle
+infinie dans certains cas comme celui ci-dessus.
+
+Q3 -
+
+Le passage de paramètre par valeur va mener à créer une copie de la valeur dans la fonction.
+Le passage de paramètre par adresse permettra de modifier le paramètre directement sans retourner
+le paramètre modifié.
+
+exemple:
+
+int inc_nb(int p){
+  p++;
+  return p;
+}
+
+void inc_nb(int *p){
+  p[0]++;
+}
+
+Si on veut le résultat modifié de la première fonction, il faut le retourner, on imagine réinjecter le
+paramètre mofifié dans lui même par exemple.
+En revanche, dans la seconde fonction, on a modifié directement le paramètre sans créer de copie grâce à
+son adresse, c'est pour cela que la fonction ne retourne rien.
+
+Q4 -
+
+rm toto détruira toto si et seulement si toto est un fichier.
+rm -rf toto détruira toto qu'il soit un fichier ou un répertoire (l'option -r est pour repository)
+et ne demandera pas à l'utilisateur s'il veut vraiment le supprimer (l'option -f est pour force).
+
+En outre, si toto est un dossier non vide, rm -rf toto détruira toto et son contenu sans demander à l'utilisateur
+s'il veut vraiment supprimer chaque élement du dossier.

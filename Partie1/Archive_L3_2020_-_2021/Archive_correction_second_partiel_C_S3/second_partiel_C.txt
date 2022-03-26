@@ -1,0 +1,37 @@
+Q1 -
+
+  La programmation modulaire est le fait de concevoir un programme à partir de composant.
+Ces composants sont des fichiers source (.c) et header (.h).
+Les prototypes de fonctions utilisées dans plusieurs modules (plusieurs sources) sont stockés dans
+les headers, ces derniers sont au préalables inclus dans les sources qui les nécessitent.
+
+  L'intérêt de la programmation modulaire est de pouvoir décomposer le programme en plusieurs modules.
+Dans l'idéal, un module équivaut à une tâche (exemple : un module pour les fonctions mathématiques, un
+pour l'interface graphique).
+Aussi, on préferera faire un module unique pour la fonction principale (main).
+Dans une équipe, cela peut aussi permettre de diviser les tâches d'un projet.
+
+Q2 -
+
+rm toto détruira toto si et seulement si toto est un fichier.
+rm -rf toto détruira toto qu'il soit un fichier ou un répertoire (l'option -r est pour repository)
+et ne demandera pas à l'utilisateur s'il veut vraiment le supprimer (l'option -f est pour force).
+
+En outre, si toto est un dossier non vide, rm -rf toto détruira toto et son contenu sans demander à l'utilisateur
+s'il veut vraiment supprimer chaque élement du dossier.
+
+Q9 -
+
+OPTIONS=-W -Wall -std=c89 -pedantic -O3
+
+hello : hello.o main.o
+      gcc $(OPTIONS) hello.o main.o -o hello
+
+main.o : main.c hello.h
+      gcc $(OPTIONS) -c main.c
+
+hello.o : hello.c
+      gcc $(OPTIONS) -c hello.c
+
+clean :
+      rm -f *.o

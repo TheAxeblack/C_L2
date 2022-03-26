@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="TP"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TP">
+				<Option output="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug/TP" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/."/>
+					<Add directory="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp1"/>
+					<Add directory="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2"/>
+					<Add directory="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp3"/>
+					<Add directory="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp4"/>
+					<Add directory="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp5"/>
+					<Add directory="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp7"/>
+					<Add directory="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp8"/>
+					<Add directory="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp8/chomp"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 TP"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="TP/fast">
+				<Option output="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug/TP" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/."/>
+					<Add directory="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp1"/>
+					<Add directory="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2"/>
+					<Add directory="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp3"/>
+					<Add directory="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp4"/>
+					<Add directory="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp5"/>
+					<Add directory="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp7"/>
+					<Add directory="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp8"/>
+					<Add directory="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp8/chomp"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/8/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 TP/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp1/prog/Rendu.LECUYER/affectation.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp1/prog/Rendu.LECUYER/bonjour.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp1/prog/Rendu.LECUYER/calculs_simples.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp1/prog/Rendu.LECUYER/maths.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp1/prog/Rendu.LECUYER/permutation.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp1/prog/Rendu.LECUYER/random.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp1/prog/affectation.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp1/prog/bissextiles.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp1/prog/bonjour.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp1/prog/calculs_simples.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp1/prog/maths.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp1/prog/pair_impair.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp1/prog/permutation.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp1/prog/random.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/Rendu.LECUYER/carre.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/Rendu.LECUYER/decode.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/Rendu.LECUYER/factorielle.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/Rendu.LECUYER/harmonique.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/Rendu.LECUYER/instructions_repetitives.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/Rendu.LECUYER/ligne.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/Rendu.LECUYER/min-max.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/Rendu.LECUYER/pgcd.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/Rendu.LECUYER/puissance(1).c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/Rendu.LECUYER/puissance(2).c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/Rendu.LECUYER/puissance.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/Rendu.LECUYER/rectangle(1).c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/Rendu.LECUYER/rectangle(2).c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/Rendu.LECUYER/rectangle.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/Rendu.LECUYER/second_degre.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/Rendu.LECUYER/table_mult.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/Rendu.LECUYER/triangle(1).c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/Rendu.LECUYER/triangle(2).c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/Rendu.LECUYER/triangle.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/carre.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/decode.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/factorielle.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/harmonique.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/instructions_repetitives.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/ligne.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/min-max.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/pgcd.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/puissance(1).c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/puissance(2).c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/puissance.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/rectangle(1).c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/rectangle(2).c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/rectangle.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/second_degre(1).c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/second_degre(2).c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/second_degre.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/table_mult(1).c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/table_mult(2).c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/table_mult.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/triangle(1).c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/triangle(2).c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp2/triangle.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp3/Rendu.LECUYER/nb_mystere_hguess.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp3/Rendu.LECUYER/nb_mystere_mguess.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp3/nb_mystere_hguess.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp3/nb_mystere_mguess.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp4/Rendu.LECUYER/bases.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp4/Rendu.LECUYER/deplacement.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp4/Rendu.LECUYER/des.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp4/Rendu.LECUYER/eratosthene.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp4/Rendu.LECUYER/manip_tabs.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp4/Rendu.LECUYER/matrice2.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp4/Rendu.LECUYER/matrices1.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp4/Rendu.LECUYER/matrices2.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp4/Rendu.LECUYER/tri_volee.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp4/Rendu.LECUYER/triangle_pascal.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp4/bases.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp4/deplacement.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp4/des.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp4/eratosthene.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp4/manip_tabs.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp4/matrice2.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp4/matrices1.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp4/matrices2.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp4/tri_volee.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp4/triangle_pascal.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp5/mesfcts_str.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp7/lecture.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp7/lecture.h">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp7/main.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp8/chomp/chomp.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp8/chomp/types.h">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp8/rectangle.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/tp8/rectangle_clic.c">
+			<Option target="TP"/>
+		</Unit>
+		<Unit filename="/mnt/c/Users/User/Documents/Cours/FAC/L2_Info/C/TP/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
