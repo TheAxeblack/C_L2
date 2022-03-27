@@ -14,4 +14,9 @@
 
 liste test_module(liste l);
 
+
+/* Fonctions de l'exercice 2 */
+
+
+
 #endif
