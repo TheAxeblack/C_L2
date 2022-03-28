@@ -1,7 +1,7 @@
 #ifndef TP_LISTE_H
 #define TP_LISTE_H
 
-typedef int element;
+typedef char *element;
 
 typedef struct cellule {
     element objet;
@@ -34,4 +34,5 @@ liste insere_element_liste_ordonnee(liste l, element elem);
 liste recopie(liste l);
 
 liste recopie_liste_recu2(liste l);
+
 #endif

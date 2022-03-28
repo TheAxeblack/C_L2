@@ -12,7 +12,7 @@
 
 /* Fonctions de l'exercice 1 */
 
-liste test_module(liste l);
+liste test_module_liste(liste l);
 
 
 /* Fonctions de l'exercice 2 */
