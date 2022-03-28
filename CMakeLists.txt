@@ -184,4 +184,4 @@ add_executable(C
         Partie2/TP/tp3/main.c
         Partie2/TP/tp3/pile.c
         Partie2/TP/tp3/pile.h
-        Partie2/TP/tp3/tp3.h Partie2/TP/tp3/ex2.c)
+        Partie2/TP/tp3/tp3.h Partie2/TP/tp3/ex2.c Partie2/TP/tp3/message.h)
