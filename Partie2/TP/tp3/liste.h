@@ -1,7 +1,7 @@
 #ifndef TP_LISTE_H
 #define TP_LISTE_H
 
-typedef char *element;
+typedef int element;
 
 typedef struct cellule {
     element objet;
