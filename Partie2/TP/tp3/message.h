@@ -9,6 +9,10 @@ typedef struct message {
 } struct_message;
 
 
-typedef struct_message *messagerie;
+typedef struct conversation {
+    struct_message objet;
+    struct conversation *suivant;
+} struct_conversation;
 
+typedef struct_conversation *messagerie;
 #endif
