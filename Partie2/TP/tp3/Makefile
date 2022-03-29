@@ -4,6 +4,8 @@ OPTIONS_MLV_1= `pkg-config --cflags MLV` `pkg-config --libs-only-other --libs-on
 OPTIONS_MLV_2= `pkg-config --libs-only-l MLV`
 MATHS_OPTIONS= -lm
 
+OBJ=liste.o pile.o file.o ex1.o ex2.o
+
 tp3: liste.o pile.o file.o ex1.o ex2.o
 	$(CC) $(OPTIONS_MLV_1) $(OPTIONS) main.c liste.o pile.o file.o ex1.o ex2.o -o tp3 $(OPTIONS_MLV_2)
 ex2.o: ex2.c tp3.h

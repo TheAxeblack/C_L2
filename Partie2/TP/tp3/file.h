@@ -1,7 +1,7 @@
 #ifndef TP_FILE_H
 #define TP_FILE_H
 
-typedef liste file;
+typedef messagerie file;
 
 file file_vide();
 

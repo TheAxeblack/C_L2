@@ -6,9 +6,9 @@
 #include <stdlib.h>
 #include <assert.h>
 #include "liste.h"
+#include "message.h"
 #include "pile.h"
 #include "file.h"
-#include "message.h"
 #include <MLV/MLV_all.h>
 
 /* Fonctions de l'exercice 1 */
@@ -16,7 +16,7 @@
 liste test_module_liste(liste l);
 
 
-/* Fonctions et/ou types/structures de l'exercice 2 */
+/* Fonctions de l'exercice 2 */
 
 
 #endif
