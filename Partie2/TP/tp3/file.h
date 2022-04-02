@@ -15,6 +15,4 @@ file defiler(file f);
 
 int taille_file(file f);
 
-void afficher_file(file f);
-
 #endif

@@ -1,6 +1,5 @@
 #include "tp3.h"
 
-/*
 file ajout_message(file f, element msg) {
     file k = f;
     enfiler(k, msg);
@@ -27,4 +26,4 @@ void affiche_message(file f) {
                f->objet.date, f->objet.contenu);
         f = f->suivant;
     }
-}*/
+}

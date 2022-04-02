@@ -44,18 +44,15 @@ pile test_module_pile(pile p) {
     return p;
 }
 
-pile test_module_file(file f) {
+file test_module_file(file f) {
     int elem = 0;
     file f2 = file_vide();
     printf("DEBUT TESTS file\n");
     f = enfiler(f, 533);
-    afficher_file(f);
-    f2 = empiler(f2, 42);
-    afficher_pile(f2);
+    f2 = enfiler(f2, 42);
     elem = debut_file(f);
     printf("Debut_file(f) = %d\n", elem);
     printf("taille(f) = %d\n", taille_file(f));
-    afficher_file(f);
     f = defiler(f);
     printf("Taille(p) = %d\n", taille_file(f));
     printf("FIN TESTS file\n");

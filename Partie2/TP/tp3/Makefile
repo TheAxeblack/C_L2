@@ -6,8 +6,8 @@ MATHS_OPTIONS= -lm
 
 OBJ=allocation.o liste.o pile.o file.o ex1.o ex2.o
 
-tp3: allocation.o liste.o pile.o file.o ex1.o ex2.o
-	$(CC) $(OPTIONS_MLV_1) $(OPTIONS) main.c allocation.o liste.o pile.o file.o ex1.o ex2.o -o tp3 $(OPTIONS_MLV_2)
+tp3: $(OBJ)
+	$(CC) $(OPTIONS_MLV_1) $(OPTIONS) main.c $(OBJ) -o $@ $(OPTIONS_MLV_2)
 ex2.o: ex2.c tp3.h
 	$(CC) $(OPTIONS) -c ex2.c
 ex1.o: ex1.c tp3.h
