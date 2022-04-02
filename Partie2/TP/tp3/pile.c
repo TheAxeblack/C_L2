@@ -22,12 +22,10 @@ pile depiler(pile p) {
 
 int taille_pile(pile p) {
     int nb = 0;
-    if (!est_pile_vide(p)) {
-        liste lcourant = p;
-        while (lcourant) {
-            nb++;
-            lcourant = lcourant->suivant;
-        }
+    liste lcourant = p;
+    while (lcourant) {
+        nb++;
+        lcourant = lcourant->suivant;
     }
     return nb;
 }
@@ -39,5 +37,5 @@ void afficher_pile(pile p) {
         printf(" %d ", p->objet);
         p = p->suivant;
     }
-
+    printf("\n");
 }

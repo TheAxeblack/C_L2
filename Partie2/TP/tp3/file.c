@@ -38,3 +38,13 @@ file enfiler(file f, element elem) {
     lcourant->suivant = nliste;
     return f;
 }
+
+void afficher_file(file f) {
+    if (est_file_vide(f))
+        printf("File vide\n");
+    while (!est_file_vide(f)) {
+        printf(" %d ", f->objet);
+        f = f->suivant;
+    }
+    printf("\n");
+}

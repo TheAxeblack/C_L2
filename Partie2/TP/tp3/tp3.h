@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
+#include "allocation.h"
 #include "message.h"
 #include "liste.h"
 #include "pile.h"
@@ -16,6 +17,8 @@
 liste test_module_liste(liste l);
 
 pile test_module_pile(pile p);
+
+file test_module_file(file f);
 
 /* Fonctions de l'exercice 2 */
 

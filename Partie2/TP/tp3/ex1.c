@@ -33,13 +33,31 @@ pile test_module_pile(pile p) {
     p = empiler(p, 53);
     afficher_pile(p);
     p2 = empiler(p2, 42);
-    printf("\n");
     afficher_pile(p2);
-    printf("\n");
     elem = sommet_pile(p);
     printf("sommet_pile(p) = %d\n", elem);
     printf("taille(p) = %d\n", taille_pile(p));
     afficher_pile(p);
+    p = depiler(p);
+    printf("Taille(p) = %d\n", taille_pile(p));
     printf("FIN TESTS pile\n");
     return p;
+}
+
+pile test_module_file(file f) {
+    int elem = 0;
+    file f2 = file_vide();
+    printf("DEBUT TESTS file\n");
+    f = enfiler(f, 533);
+    afficher_file(f);
+    f2 = empiler(f2, 42);
+    afficher_pile(f2);
+    elem = debut_file(f);
+    printf("Debut_file(f) = %d\n", elem);
+    printf("taille(f) = %d\n", taille_file(f));
+    afficher_file(f);
+    f = defiler(f);
+    printf("Taille(p) = %d\n", taille_file(f));
+    printf("FIN TESTS file\n");
+    return f;
 }

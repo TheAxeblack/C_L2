@@ -32,7 +32,7 @@ element renvoie_premier_liste(liste l) {
 
 liste supprimer_premier_liste(liste l) {
     liste lsuivant = l->suivant;
-    free(l);
+    libere_mem(&l);
     return lsuivant;
 }
 
