@@ -1,7 +1,7 @@
 #ifndef C_MESSAGE_H
 #define C_MESSAGE_H
 
-typedef struct message {
+/*typedef struct message {
     char *expediteur;
     char *sujet;
     char *date;
@@ -14,5 +14,6 @@ typedef struct conversation {
     struct conversation *suivant;
 } struct_conversation;
 
-typedef struct_conversation *messagerie;
+typedef struct_conversation *messagerie;*/
+
 #endif

@@ -27,12 +27,6 @@ liste supprimer_premier_liste(liste l);
 
 liste trouver_element(liste l, element elem);
 
-liste liste_cat(liste l1, liste l2);
-
-liste insere_element_liste_ordonnee(liste l, element elem);
-
-liste recopie(liste l);
-
-liste recopie_liste_recu2(liste l);
+void affiche_liste(liste l);
 
 #endif

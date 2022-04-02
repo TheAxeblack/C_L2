@@ -18,16 +18,26 @@ element sommet_pile(pile p) {
 
 pile depiler(pile p) {
     return supprimer_premier_liste(p);
-
 }
 
 int taille_pile(pile p) {
     int nb = 0;
-    liste lcourant = p;
-    while (lcourant) {
-        nb++;
-        lcourant = lcourant->suivant;
+    if (!est_pile_vide(p)) {
+        liste lcourant = p;
+        while (lcourant) {
+            nb++;
+            lcourant = lcourant->suivant;
+        }
     }
     return nb;
 }
 
+void afficher_pile(pile p) {
+    if (est_pile_vide(p))
+        printf("Pile vide\n");
+    while (!est_pile_vide(p)) {
+        printf(" %d ", p->objet);
+        p = p->suivant;
+    }
+
+}

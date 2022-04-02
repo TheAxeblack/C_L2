@@ -1,7 +1,7 @@
 #ifndef TP_FILE_H
 #define TP_FILE_H
 
-typedef messagerie file;
+typedef liste file;
 
 file file_vide();
 
@@ -14,7 +14,5 @@ element debut_file(file f);
 file defiler(file f);
 
 int taille_file(file f);
-
-void afficher_file(file f);
 
 #endif
