@@ -6,7 +6,6 @@
 #include <stdlib.h>
 #include <assert.h>
 #include "allocation.h"
-#include "message.h"
 #include "liste.h"
 #include "pile.h"
 #include "file.h"
