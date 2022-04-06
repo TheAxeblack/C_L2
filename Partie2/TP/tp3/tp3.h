@@ -10,6 +10,8 @@
 #include "pile.h"
 #include "file.h"
 #include <MLV/MLV_all.h>
+#include <stddef.h>
+#include "ex2.h"
 
 /* Fonctions de l'exercice 1 */
 
@@ -19,5 +21,18 @@ pile test_module_pile(pile p);
 
 file test_module_file(file f);
 
+
+/* Fonctions de l'exercice 2 */
+typedef m_liste message;
+
+message ajouter_message(message m, element val);
+
+message supprimer_message(message m);
+
+message afficher_message(message m);
+
+
+/* Fonctions de l'exercice 3 */
+int calcul_postfixe(int taille, char **params, pile p);
 
 #endif
