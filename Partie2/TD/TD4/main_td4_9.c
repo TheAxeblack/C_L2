@@ -13,25 +13,24 @@
 #include "listedc.h"
 
 
-int main()
-{
-  liste l=inserer_element_trie(inserer_element_trie(inserer_element_trie(liste_vide(),2),1),5);
-  
-  affiche_liste(l);
-  l=supprimer_element(l,2);
-  affiche_liste(l);
-  l=inserer_element_trie(l,7);
-  affiche_liste(l);
-  l=supprimer_element(l,3);
-  affiche_liste(l);
-  l=supprimer_element(l,7);
-  affiche_liste(l);
-  l=supprimer_element(l,4);
-  affiche_liste(l);
-  l=supprimer_element(l,1);
-  affiche_liste(l);
-  l=supprimer_element(l,5);
-  affiche_liste(l);
+int main() {
+    liste l = inserer_element_trie(inserer_element_trie(inserer_element_trie(liste_vide(), 2), 1), 5);
 
-  return EXIT_SUCCESS;
+    affiche_liste(l);
+    l = supprimer_element(l, 2);
+    affiche_liste(l);
+    l = inserer_element_trie(l, 7);
+    affiche_liste(l);
+    l = supprimer_element(l, 3);
+    affiche_liste(l);
+    l = supprimer_element(l, 7);
+    affiche_liste(l);
+    l = supprimer_element(l, 4);
+    affiche_liste(l);
+    l = supprimer_element(l, 1);
+    affiche_liste(l);
+    l = supprimer_element(l, 5);
+    affiche_liste(l);
+
+    return EXIT_SUCCESS;
 }

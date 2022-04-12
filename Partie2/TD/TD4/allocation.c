@@ -96,7 +96,7 @@ void *reallocation_mem_peda(void **pt, size_t nobjets, size_t taille) {
  *attention pt doit en fait �tre un void **
  */
 void libere_mem(void *pt) {
-    void **adr_pt = (void **) pt; // on suppose que pt est l'adresse de pointeur � lib�rer
+    void **adr_pt = (void **) pt; /* on suppose que pt est l'adresse de pointeur � lib�rer */
     if ((*adr_pt) != NULL)
         free(*adr_pt); /*liberation de *pt */
 

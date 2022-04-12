@@ -180,6 +180,7 @@ add_executable(C
         Partie2/TD/TD4/main_file_tableau.c
         Partie2/TD/TD4/main_matrice.c
         Partie2/TD/TD4/main_matrice_creuse.c
+        Partie2/TD/TD4/main_pile_tableau.c
         Partie2/TD/TD4/main_td4_8.c
         Partie2/TD/TD4/main_td4_9.c
         Partie2/TD/TD4/matrice.c

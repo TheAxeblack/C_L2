@@ -11,9 +11,9 @@
 
 liste recherche_element(liste l, element elem);
 
-liste concatene_listes(liste l1,liste l2);
+liste concatene_listes(liste l1, liste l2);
 
-liste insere_liste_ordonnee(liste l,element e);
+liste insere_liste_ordonnee(liste l, element e);
 
 liste trie_liste_solution1(liste l);
 
@@ -21,11 +21,11 @@ liste trie_liste_solution2(liste l);
 
 liste trie_liste_solution2bis(liste l);
 
-void recopie_liste_recu(liste l, liste * resultat);
+void recopie_liste_recu(liste l, liste *resultat);
 
 liste recopie_liste_recu2(liste l);
 
-void recopie_liste_iter(liste l, liste * resultat);
+void recopie_liste_iter(liste l, liste *resultat);
 
 liste inverse_liste(liste l);
 

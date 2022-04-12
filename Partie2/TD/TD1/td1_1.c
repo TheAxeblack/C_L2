@@ -27,51 +27,51 @@
 
 
 /*declaration fonction */
-void calcule_difference(double a,double b);
+void calcule_difference(double a, double b);
+
 void usage(char *s);
 
 
 /*definition fonction usage */
-void usage(char *s)
-{
-  fprintf(stderr,"Erreur usage: %s a b\n\ta et b 2 reels positifs, calcule la difference entre la moyenne arithmetique et geometrique de a et b\n",s);
+void usage(char *s) {
+    fprintf(stderr,
+            "Erreur usage: %s a b\n\ta et b 2 reels positifs, calcule la difference entre la moyenne arithmetique et geometrique de a et b\n",
+            s);
 }
 
 /*definition fonction calcule_difference*/
-void calcule_difference(double a,double b)
-{
-  double moyenne_a=(a+b)/2.0;
-  double moyenne_g=sqrt(a*b);
+void calcule_difference(double a, double b) {
+    double moyenne_a = (a + b) / 2.0;
+    double moyenne_g = sqrt(a * b);
 
-  double diff = moyenne_a-moyenne_g;
+    double diff = moyenne_a - moyenne_g;
 
-  printf("Moyenne arithmetique: %.4f, moyenne geometrique: %lf,\nla difference entre les 2 moyennes est %lf\n",moyenne_a,moyenne_g,diff);
+    printf("Moyenne arithmetique: %.4f, moyenne geometrique: %lf,\nla difference entre les 2 moyennes est %lf\n",
+           moyenne_a, moyenne_g, diff);
 }
 
 
 /* Fonction main */
-int main(int argc,char * argv[])
-{
-  double a,b;
+int main(int argc, char *argv[]) {
+    double a, b;
 
-  if (argc != 3)
-  {
-    usage(argv[0]);
-    return EXIT_FAILURE;
-  }  
+    if (argc != 3) {
+        usage(argv[0]);
+        return EXIT_FAILURE;
+    }
 
-  a=atof(argv[1]);
-  b=atof(argv[2]);
+    a = atof(argv[1]);
+    b = atof(argv[2]);
 
-  if(a>=0 && b>=0)
-    calcule_difference(a,b);
-  else{
-    usage(argv[0]);
-    printf("L'un des nombres au moins est negatif, a:%f, b:%f\n",a,b);
-    exit(EXIT_FAILURE);
-  }
+    if (a >= 0 && b >= 0)
+        calcule_difference(a, b);
+    else {
+        usage(argv[0]);
+        printf("L'un des nombres au moins est negatif, a:%f, b:%f\n", a, b);
+        exit(EXIT_FAILURE);
+    }
 
-  return EXIT_SUCCESS;
+    return EXIT_SUCCESS;
 }
 
 

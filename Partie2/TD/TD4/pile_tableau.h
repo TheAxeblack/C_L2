@@ -16,16 +16,16 @@
 #define _PILE_TABLEAU_H_
 
 /*on defini le type des objets dans la file, des entiers >0 par exemple*/
-typedef  int objet;
+typedef int objet;
 #define OBJET_VIDE -1 /* set a definir la notion d'objet vide, pourrait etre NULL si les objets sont des pointeurs */
 
 /* structure définissant  la pile*/
-typedef struct struct_pile{
-  int dimension_pile;
-  objet * tab; 
-  int sommet;
-}pile_struct;
-typedef pile_struct * pile;
+typedef struct struct_pile {
+    int dimension_pile;
+    objet *tab;
+    int sommet;
+} pile_struct;
+typedef pile_struct *pile;
 
 /* ------------------------------ */
 
@@ -40,8 +40,9 @@ int est_pile_pleine(pile p);
 
 /* empiler un element,
    retourne 1 si pas d'erreur (donc il restait de la place dans la pile) */
-int empiler(pile p,objet x);
+int empiler(pile p, objet x);
 
 /* depilement d'un objet */
 objet depiler(pile p);
+
 #endif

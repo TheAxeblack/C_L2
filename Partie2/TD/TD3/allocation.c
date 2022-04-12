@@ -1,13 +1,13 @@
 /**
- * Ficher implémentant des fonctions d'allocation et de liberation memoire
+ * Ficher implï¿½mentant des fonctions d'allocation et de liberation memoire
  *
- *4 fonctions proposées
+ *4 fonctions proposï¿½es
  *-allocation simple
  *-allocation et mise a zero
  *-reallocation, ne marche que sur une adresse ayant deja eu une allocation
  *-fonctions de liberation memoire:
  *        +qui met le pointeur de l'adresse a NULL a la fin, on passe l'adresse d'un pointeur type void ** - mais generateur de warning
- *        +qui met le pointeur de l'adresse a NULL mais a la fin, on passe toujours l'adresse d'un pointeur mais le type est void * qui correspond à n'importe quel pointeur, pas de warning
+ *        +qui met le pointeur de l'adresse a NULL mais a la fin, on passe toujours l'adresse d'un pointeur mais le type est void * qui correspond ï¿½ n'importe quel pointeur, pas de warning
  *        +qui libere juste le pointeur donne en argument, similairement a free
  *
  * hist:
@@ -26,38 +26,35 @@
  *pour un nombre nobjets
  *alloue un espace de memoire de taille  nobjets*taille octets
  */
-void * allocation_mem(size_t nobjets,size_t taille)
-{
-    void * pt;
-    
-    pt = malloc (nobjets * taille);/*allocation*/
+void *allocation_mem(size_t nobjets, size_t taille) {
+    void *pt;
+
+    pt = malloc(nobjets * taille);/*allocation*/
 
     /* on verifie si l'allocation a marche*/
-    if (pt==NULL) 
-      mon_erreur("Impossible d'allouer la memoire %d %d\n",nobjets,taille); 
+    if (pt == NULL)
+        mon_erreur("Impossible d'allouer la memoire %d %d\n", nobjets, taille);
 
-    return(pt);
+    return (pt);
 }
 
 
 /*--------------------------------------------------------------------
  *fonction d'allocation de memoire du type defini par taille 
- *pour un nombre nobjets, l'espace mémoire est initialise à 0 (null)
+ *pour un nombre nobjets, l'espace mï¿½moire est initialise ï¿½ 0 (null)
  *alloue un espace de memoire de taille  nobjets*taille octets
  */
-void * allocation_mem_init0(size_t nobjets,size_t taille)
-{
-    void * pt;
-    
-    pt = calloc (nobjets,taille);/*allocation avec calloc*/
+void *allocation_mem_init0(size_t nobjets, size_t taille) {
+    void *pt;
+
+    pt = calloc(nobjets, taille);/*allocation avec calloc*/
 
     /* on verifie si l'allocation a marche*/
-    if (pt==NULL) 
-      mon_erreur("Impossible d'allouer la memoire %d * %d\n",nobjets,taille); 
+    if (pt == NULL)
+        mon_erreur("Impossible d'allouer la memoire %d * %d\n", nobjets, taille);
 
-    return(pt);
+    return (pt);
 }
-
 
 
 /*--------------------------------------------------------------------
@@ -66,13 +63,12 @@ void * allocation_mem_init0(size_t nobjets,size_t taille)
  * l'adresse memoire deja allouee est definie par (*ptr) 
  * l'espace alloue est de taille nobjets*taille octets
  */
-void* reallocation_mem(void *pt, size_t nobjets,size_t taille)
-{
-     void *pt_realloc = realloc(pt, nobjets*taille);
-     if (pt_realloc == NULL)
-       mon_erreur("Impossible de reallouer la memoire %d * %d a l'adresse %p\n",nobjets,taille,pt); 
+void *reallocation_mem(void *pt, size_t nobjets, size_t taille) {
+    void *pt_realloc = realloc(pt, nobjets * taille);
+    if (pt_realloc == NULL)
+        mon_erreur("Impossible de reallouer la memoire %d * %d a l'adresse %p\n", nobjets, taille, pt);
 
-     return pt_realloc;
+    return pt_realloc;
 }
 
 /*--------------------------------------------------------------------
@@ -80,49 +76,46 @@ void* reallocation_mem(void *pt, size_t nobjets,size_t taille)
  *avec une taille memoire differente
  * l'adresse memoire deja allouee est definie par (*ptr) 
  * l'espace alloue est de taille nobjets*taille octets
- * cette fonction modifie le pointeur *pt en l'affectant à la nouvelle adresse
+ * cette fonction modifie le pointeur *pt en l'affectant ï¿½ la nouvelle adresse
  */
-void* reallocation_mem_peda(void **pt, size_t nobjets,size_t taille)
-{
-     void *pt_realloc = realloc(*pt, nobjets*taille);
-     if (pt_realloc != NULL)
-         *pt = pt_realloc;
-     else
-       mon_erreur("Impossible de reallouer la memoire %d * %d a l'adresse %p\n",nobjets,taille,*pt); 
+void *reallocation_mem_peda(void **pt, size_t nobjets, size_t taille) {
+    void *pt_realloc = realloc(*pt, nobjets * taille);
+    if (pt_realloc != NULL)
+        *pt = pt_realloc;
+    else
+        mon_erreur("Impossible de reallouer la memoire %d * %d a l'adresse %p\n", nobjets, taille, *pt);
 
-     return pt_realloc;
+    return pt_realloc;
 }
 
 /*--------------------------------------------------------------------
  *fonction qui libere de la memoire allouee en *pt
- *et place le pointeur à NULL
- *ICI on suppose que pt est l'adresse de la variable pointeur allouée
- *nécessaire pour pouvoir libérer.
- *attention pt doit en fait être un void **
+ *et place le pointeur ï¿½ NULL
+ *ICI on suppose que pt est l'adresse de la variable pointeur allouï¿½e
+ *nï¿½cessaire pour pouvoir libï¿½rer.
+ *attention pt doit en fait ï¿½tre un void **
  */
-void libere_mem(void *pt)
-{
-  void ** adr_pt=(void **) pt; // on suppose que pt est l'adresse de pointeur à libérer
-  if((*adr_pt)!=NULL)
-    free(*adr_pt); /*liberation de *pt */
+void libere_mem(void *pt) {
+    void **adr_pt = (void **) pt; // on suppose que pt est l'adresse de pointeur ï¿½ libï¿½rer
+    if ((*adr_pt) != NULL)
+        free(*adr_pt); /*liberation de *pt */
 
-    *adr_pt=NULL; /* *pt pointe maintenant sur NULL*/
+    *adr_pt = NULL; /* *pt pointe maintenant sur NULL*/
 }
 
 
 /*--------------------------------------------------------------------
- *fonction qui libere de la memoire allouee à l'adresse mémoire 
+ *fonction qui libere de la memoire allouee ï¿½ l'adresse mï¿½moire 
  * definie par (*pt) 
  * (*pt) est mis a NULL pour bien indique qu'il ne pointe sur rien
- *version pédagogique qui force à entrer un adresse de pointeur
- *mais qui nécessite un "cast" pour éviter un warning
+ *version pï¿½dagogique qui force ï¿½ entrer un adresse de pointeur
+ *mais qui nï¿½cessite un "cast" pour ï¿½viter un warning
  */
-void libere_mem_peda(void * *pt)
-{
-  if((*pt)!=NULL)
-    free(*pt); /*liberation de *pt */
+void libere_mem_peda(void **pt) {
+    if ((*pt) != NULL)
+        free(*pt); /*liberation de *pt */
 
-  *pt=NULL; /* *pt pointe maintenant sur NULL, cad rien*/
+    *pt = NULL; /* *pt pointe maintenant sur NULL, cad rien*/
 }
 
 
@@ -130,7 +123,6 @@ void libere_mem_peda(void * *pt)
  *fonction qui libere de la memoire allouee en pt mais il n'y a pas de
  *controle sur la valeur de pt en sortie de fonction
  */
-void libere(void *pt)
-{
+void libere(void *pt) {
     free(pt); /*liberation de *pt */
 }

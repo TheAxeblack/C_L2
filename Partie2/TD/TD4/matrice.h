@@ -26,31 +26,32 @@
 #include "allocation.h"
 #include "mon_erreur.h"
 
-typedef struct matrice_cellule{
-  int l; //nb de lignes
-  int c; //nb de colonnes
-  double ** tab; //tableau
-}cell_matrice;
-typedef cell_matrice* matrice; //une matrice est un pointeur sur une cellule cell_matrice
+typedef struct matrice_cellule {
+    int l; //nb de lignes
+    int c; //nb de colonnes
+    double **tab; //tableau
+} cell_matrice;
+typedef cell_matrice *matrice; //une matrice est un pointeur sur une cellule cell_matrice
 
 /*fonction de creation de matrice générale avec l lignes et c colonnes*/
-matrice creer_matrice(int l,int c);
+matrice creer_matrice(int l, int c);
 
 /*récupération de l'element a la position [i,j] dans m*/
-double get_element_matrice(matrice m,int i,int j);
+double get_element_matrice(matrice m, int i, int j);
 
 /*on fixe l'element a la position [i,j] dans m à la valeur val*/
-void set_element_matrice(matrice m,int i,int j,double val);
+void set_element_matrice(matrice m, int i, int j, double val);
 
 /*mutiplie les entrées de la matrice par le scalaire val*/
-void multiplie_scalaire(matrice m,double val);
+void multiplie_scalaire(matrice m, double val);
 
 /*somme de 2 matrices*/
-matrice somme_matrices(matrice mat1,matrice mat2);
+matrice somme_matrices(matrice mat1, matrice mat2);
 
 /*multiplication de 2 matrices*/
-matrice multiplication_matrices(matrice mat1,matrice mat2);
+matrice multiplication_matrices(matrice mat1, matrice mat2);
 
 /*affichage d'une matrice*/
 void affiche_matrice(matrice m);
+
 #endif
