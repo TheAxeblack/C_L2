@@ -23,7 +23,7 @@ LISTE_TD4_MAT_C = mon_erreur.o allocation.o matrice_creuse.o liste_gen.o main_ma
 
 
 #pour tout creer
-all: td4_8 td4_9 td4_mat main_file_2p  pile_tableau file_tableau main_file_2p_tableau
+all: td4_8 td4_9 td4_mat main_file_2pointeurs pile_tableau file_tableau main_file_2p_tableau
 
 td4_8 : $(LISTE_TD4_8)
 	$(CC) $(LISTE_TD4_8) -o $@ $(lDFLAGS) 

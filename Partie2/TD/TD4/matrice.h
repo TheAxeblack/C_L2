@@ -27,11 +27,11 @@
 #include "mon_erreur.h"
 
 typedef struct matrice_cellule {
-    int l; //nb de lignes
-    int c; //nb de colonnes
-    double **tab; //tableau
+    int l; /*//nb de lignes*/
+    int c; /*//nb de colonnes*/
+    double **tab; /*//tableau*/
 } cell_matrice;
-typedef cell_matrice *matrice; //une matrice est un pointeur sur une cellule cell_matrice
+typedef cell_matrice *matrice; /*//une matrice est un pointeur sur une cellule cell_matrice*/
 
 /*fonction de creation de matrice générale avec l lignes et c colonnes*/
 matrice creer_matrice(int l, int c);

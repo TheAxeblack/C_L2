@@ -65,7 +65,7 @@ int est_pile_pleine(pile p) {
 /* empiler un element,
    retourne 1 si pas d'erreur (donc il restait de la place dans la pile) */
 int empiler(pile p, objet x) {
-    if (p->sommet < p->dimension_pile) //test pile non pleine -> on aurait pu utiliser la fonction du dessus
+    if (p->sommet < p->dimension_pile) /* test pile non pleine -> on aurait pu utiliser la fonction du dessus */
     {
         p->tab[p->sommet] = x;
         p->sommet++;
@@ -78,7 +78,7 @@ int empiler(pile p, objet x) {
 
 /* depilement d'un objet */
 objet depiler(pile p) {
-    if (p->sommet > 0) //test pile vide -> on aurait pu utiliser la fonction du dessus
+    if (p->sommet > 0) /* test pile vide -> on aurait pu utiliser la fonction du dessus */
     {
         objet o = p->tab[p->sommet - 1];
         p->sommet--;

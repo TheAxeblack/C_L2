@@ -105,7 +105,7 @@ liste trie_liste_solution2(liste l) {
     while (!est_liste_vide(p1)) {
         p2 = p1->suivant;
         while (!est_liste_vide(p2)) {
-            if (est_avant(p2->objet, p1->objet)) //si p2 est avant on inverse les 2 objets
+            if (est_avant(p2->objet, p1->objet)) /*//si p2 est avant on inverse les 2 objets*/
             {
                 element e = p1->objet;
                 p1->objet = p2->objet;
@@ -115,53 +115,53 @@ liste trie_liste_solution2(liste l) {
         }
         p1 = p1->suivant;
     }
-    return l; //le debut de liste n'a pas change
+    return l; /*//le debut de liste n'a pas change*/
 }
 
 /*cette solution implemente un tri par insertion en inversant les cellules (plus complique!)*/
 liste trie_liste_solution2bis(liste l) {
-    liste p1 = l; //sert a parcourir l
-    liste p2; //va servir a parcourir la liste depuis p1
-    liste precedent_p1 = liste_vide(); //sauvegarde du precedent de p1
-    liste debut = l; //indique le debut de la liste resultat a renvoyer
+    liste p1 = l; /*//sert a parcourir l*/
+    liste p2; /*//va servir a parcourir la liste depuis p1*/
+    liste precedent_p1 = liste_vide(); /*//sauvegarde du precedent de p1*/
+    liste debut = l; /*//indique le debut de la liste resultat a renvoyer*/
 
     while (!est_liste_vide(p1)) {
-        liste precedent_p2 = p1; //sauvegarde du precedent de p2
-        p2 = p1->suivant;       //on commence au suivant de p1
+        liste precedent_p2 = p1; /*//sauvegarde du precedent de p2*/
+        p2 = p1->suivant;       /*//on commence au suivant de p1*/
 
         while (!est_liste_vide(p2)) {
-            if (p2->objet < p1->objet)/*si p2 est plus petit, on va inverser les cellules p2 et p1 */
+            if (p2->objet < p1->objet) /*si p2 est plus petit, on va inverser les cellules p2 et p1 */
             {
-                liste paux = p1; //sert a sauvegarder p1
-                liste aux_p1suivant = p1->suivant; //set a sauvegarder le suivant de p1
+                liste paux = p1; /*//sert a sauvegarder p1*/
+                liste aux_p1suivant = p1->suivant; /*//set a sauvegarder le suivant de p1*/
 
-                if (est_liste_vide(precedent_p1)) //si n'a pas de precedent, p2 devient le nouveau debut de liste
+                if (est_liste_vide(precedent_p1)) /*//si n'a pas de precedent, p2 devient le nouveau debut de liste*/
                     debut = p2;
                 else
-                    precedent_p1->suivant = p2; //sinon on met a jour le chainage avec le precedent de p1
+                    precedent_p1->suivant = p2; /*//sinon on met a jour le chainage avec le precedent de p1*/
 
-                if (precedent_p2 != p1) {        //on verifie que le precedent de p2 n'est pas p1
-                    precedent_p2->suivant = p1;   //et on met a jour le chainage du precedent de p2
+                if (precedent_p2 != p1) {        /*//on verifie que le precedent de p2 n'est pas p1*/
+                    precedent_p2->suivant = p1;   /*//et on met a jour le chainage du precedent de p2*/
                 }
 
-                p1->suivant = p2->suivant;    //on met a jour le chainage du p1->suivant
+                p1->suivant = p2->suivant;    /*//on met a jour le chainage du p1->suivant*/
 
-                if (aux_p1suivant != p2)      //on verifie que le suivant de p1 n'est pas p2
-                    p2->suivant = aux_p1suivant;   //et on met a jour le suivant de p2
-                else p2->suivant = p1;       //sinon le suivant de p2 est directement p1
+                if (aux_p1suivant != p2)      /*//on verifie que le suivant de p1 n'est pas p2*/
+                    p2->suivant = aux_p1suivant;   /*//et on met a jour le suivant de p2*/
+                else p2->suivant = p1;       /*//sinon le suivant de p2 est directement p1*/
 
-                p1 = p2;//p1 devient p2 car on a inverse les 2
-                p2 = paux; //p2 devient p1
+                p1 = p2; /*//p1 devient p2 car on a inverse les 2*/
+                p2 = paux; /*//p2 devient p1*/
             }
-            precedent_p2 = p2; //on met a jour le precedent de p2
-            p2 = p2->suivant; //et on passe au suivant
+            precedent_p2 = p2; /*//on met a jour le precedent de p2*/
+            p2 = p2->suivant; /*//et on passe au suivant*/
         }
 
-        precedent_p1 = p1; //on met a jour le precedent de pA
-        p1 = p1->suivant; //et on passe au suivant
+        precedent_p1 = p1;/* //on met a jour le precedent de pA*/
+        p1 = p1->suivant; /*//et on passe au suivant*/
     }
 
-    return debut; //renvoie du debut de liste
+    return debut; /*//renvoie du debut de liste*/
 }
 
 /*---*/
@@ -171,13 +171,13 @@ liste trie_liste_solution2bis(liste l) {
 
 /*version recursive*/
 void recopie_liste_recu(liste l, liste *resultat) {
-    if (est_liste_vide(l)) //si la liste est vide, on a pour resultat une liste vide
+    if (est_liste_vide(l)) /*//si la liste est vide, on a pour resultat une liste vide*/
         *resultat = liste_vide();
     else {
         *resultat = insere_element_liste(liste_vide(),
-                                         l->objet); //on cree un nouveau maillon avec l'objet courant et on le "met" dans resultat
+                                         l->objet); /*//on cree un nouveau maillon avec l'objet courant et on le "met" dans resultat*/
         recopie_liste_recu(l->suivant,
-                           &((*resultat)->suivant)); //on copie la suite de la liste en mettant le début de la copie à (*resultat)->suivant
+                           &((*resultat)->suivant)); /*//on copie la suite de la liste en mettant le début de la copie à (*resultat)->suivant*/
     }
 }
 
@@ -196,7 +196,7 @@ liste recopie_liste_recu2(liste l) {
 
 /*version iterative */
 void recopie_liste_iter(liste l, liste *resultat) {
-    liste precedent = liste_vide(); //pointeur qui precedent sur le precedent maillon traite
+    liste precedent = liste_vide(); /*//pointeur qui precedent sur le precedent maillon traite*/
     liste courant = l;
 
     *resultat = liste_vide(); /*//on initiliase la liste resultat a NULL*/

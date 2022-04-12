@@ -70,7 +70,7 @@ int enfiler(file f, objet x) {
 
     ok = empiler(f->pile_entree, x);
 
-    if (ok == 0 && est_pile_vide(f->pile_sortie)) //si la pile de sortie n'est pas vide, on peut pas inverser !!
+    if (ok == 0 && est_pile_vide(f->pile_sortie)) /* si la pile de sortie n'est pas vide, on peut pas inverser !! */
     {
         inverser_piles(f);
         ok = empiler(f->pile_entree, x);
