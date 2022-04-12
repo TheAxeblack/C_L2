@@ -21,6 +21,13 @@ pile test_module_pile(pile p);
 
 file test_module_file(file f);
 
+/* Fonctions de l'exercice 2 */
+
+liste ajout_message(file f, element msg);
+
+file supprime_message(file f);
+
+void affiche_message(file f);
 
 /* Fonctions de l'exercice 2 */
 typedef m_liste message;

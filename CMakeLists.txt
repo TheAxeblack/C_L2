@@ -21,6 +21,10 @@ include_directories(Partie1/training_exams)
 include_directories(Partie1/training_exams/ex2)
 include_directories(Partie2)
 include_directories(Partie2/TD)
+include_directories(Partie2/TD/TD1)
+include_directories(Partie2/TD/TD2)
+include_directories(Partie2/TD/TD3)
+include_directories(Partie2/TD/TD4)
 include_directories(Partie2/TP)
 include_directories(Partie2/TP/tp1)
 include_directories(Partie2/TP/tp1/calculatrice)
@@ -137,13 +141,58 @@ add_executable(C
         Partie1/TP/tp8/rectangle_clic.c
         Partie1/training_exams/ex2/ex2.c
         Partie1/training_exams/ex2/ex2.h
-        Partie2/TD/td1_1.c
-        Partie2/TD/td1_13.c
-        Partie2/TD/td1_3.c
-        Partie2/TD/td1_5.c
-        Partie2/TD/td2_1.c
-        Partie2/TD/td2_4.c
-        Partie2/TD/td2_9.c
+        Partie2/TD/TD1/td1_1.c
+        Partie2/TD/TD1/td1_3.c
+        Partie2/TD/TD1/td1_5.c
+        Partie2/TD/TD1/td1_13.c
+        Partie2/TD/TD2/td2_1.c
+        Partie2/TD/TD2/td2_4.c
+        Partie2/TD/TD2/td2_9.c
+        Partie2/TD/TD3/allocation.c
+        Partie2/TD/TD3/allocation.h
+        Partie2/TD/TD3/echange.c
+        Partie2/TD/TD3/fonctions_td3.c
+        Partie2/TD/TD3/fonctions_td3.h
+        Partie2/TD/TD3/main_td3.c
+        Partie2/TD/TD3/mon_erreur.c
+        Partie2/TD/TD3/mon_erreur.h
+        Partie2/TD/TD3/td3_4.c
+        Partie2/TD/TD3/td3_5.c
+        Partie2/TD/TD3/td3_7.c
+        Partie2/TD/TD3/td3_8.c
+        Partie2/TD/TD3/td3_bonus.c
+        Partie2/TD/TD4/allocation.h
+        Partie2/TD/TD4/allocation.c
+        Partie2/TD/TD4/file_2pointeurs.c
+        Partie2/TD/TD4/file_2pointeurs.h
+        Partie2/TD/TD4/file_av_2_piles_tableau.c
+        Partie2/TD/TD4/file_av_2_piles_tableau.h
+        Partie2/TD/TD4/file_tableau.c
+        Partie2/TD/TD4/file_tableau.h
+        Partie2/TD/TD4/liste.c
+        Partie2/TD/TD4/liste.h
+        Partie2/TD/TD4/liste_gen.c
+        Partie2/TD/TD4/liste_gen.h
+        Partie2/TD/TD4/listedc.c
+        Partie2/TD/TD4/listedc.h
+        Partie2/TD/TD4/main_file2pointeurs.c
+        Partie2/TD/TD4/main_file_av_2_piles_tableau.c
+        Partie2/TD/TD4/main_file_tableau.c
+        Partie2/TD/TD4/main_matrice.c
+        Partie2/TD/TD4/main_matrice_creuse.c
+        Partie2/TD/TD4/main_td4_8.c
+        Partie2/TD/TD4/main_td4_9.c
+        Partie2/TD/TD4/matrice.c
+        Partie2/TD/TD4/matrice.h
+        Partie2/TD/TD4/matrice_creuse.c
+        Partie2/TD/TD4/matrice_creuse.h
+        Partie2/TD/TD4/mon_erreur.h
+        Partie2/TD/TD4/mon_erreur.c
+        Partie2/TD/TD4/pile_tableau.c
+        Partie2/TD/TD4/pile_tableau.h
+        Partie2/TD/TD4/pile_tableau_main.c
+        Partie2/TD/TD4/td4_8.c
+        Partie2/TD/TD4/td4_8.h
         Partie2/TP/tp1/calculatrice/calculatrice.h
         Partie2/TP/tp1/calculatrice/fonctions_non_std.c
         Partie2/TP/tp1/calculatrice/fonctions_std.c
