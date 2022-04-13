@@ -236,4 +236,4 @@ add_executable(C
         Partie2/TP/tp3/pile.h
         Partie2/TP/tp3/tp3.h
         Partie2/TP/tp3/allocation.c
-        Partie2/TP/tp3/allocation.h Partie2/TP/tp3/ex3.c Partie2/TP/tp3/ex2.c Partie2/TP/tp3/ex2.h Partiels/S4_1/2.1/main.c Partiels/S4_1/2.2/main.c Partiels/S4_1/3.1/main.c)
+        Partie2/TP/tp3/allocation.h Partie2/TP/tp3/ex3.c Partie2/TP/tp3/ex2.c Partie2/TP/tp3/ex2.h Partiels/S4_1/2.1/main.c Partiels/S4_1/2.2/main.c Partiels/S4_1/3.1/main.c Partie2/TP/tp4/src/arbre_binaire.c Partie2/TP/tp4/inc/arbre_binaire.h Partie2/TP/tp4/src/main.c)
