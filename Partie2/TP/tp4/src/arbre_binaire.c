@@ -47,10 +47,6 @@ void afficher_arbre_infixe(arbre a) {
     }
 }
 
-void affiche_racine(arbre a) {
-    printf("%c", a->noeud);
-}
-
 void afficher_arbre_postfixe(arbre a) {
     if (!est_vide(a)) {
         if (a->noeud != 0) {

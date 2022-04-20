@@ -251,7 +251,4 @@ add_executable(C
         Partie2/TP/tp4/src/usage.c Partie2/TP/tp4/inc/usage.h
         Partie2/TP/tp4/inc/dictionnaire.h
         Partie2/TP/tp4/src/dictionnaire.c
-        Partie2/TP/tp4/src/liste.c
-        Partie2/TP/tp4/src/file.c
-        Partie2/TP/tp4/inc/file.h
-        Partie2/TP/tp4/inc/liste.h)
+        )

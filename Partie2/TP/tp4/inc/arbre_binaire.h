@@ -1,7 +1,6 @@
 #ifndef C_ARBRE_BINAIRE_H
 #define C_ARBRE_BINAIRE_H
 
-#include "../inc/file.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>

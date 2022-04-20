@@ -9,8 +9,9 @@ int main(int argc, char **argv) {
 
     int res = 0;
 
-    arbre a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, dico;
-    a = b = c = d = e = f = g = h = i = j = k = l = m = n = o = p = dico = creer_arbre_vide();
+    arbre a, b, c, d, e, f, g, h, i, j;
+    dictionnaire dico;
+    a = b = c = d = e = f = g = h = i = j = creer_arbre_vide();
 
     if (argc != 2)
         ft_usage(argv[0]);
@@ -45,31 +46,39 @@ int main(int argc, char **argv) {
     afficher_arbre_prefixe(j);
     printf(" = %d\n", res);
     printf("Fin du test du module postfixe_inversee.c\n\n--------- Test du module dictionnaire.c ---------\n");
-    a = creer_noeud('\0'); /* noeud '\0' */
+
+    /* Creation arbre dico de l'exemple */
+    a = creer_noeud('0'); /* noeud '\0' */
 
     b = creer_arbre('s', a, NULL);
     b = creer_arbre('n', a, b);
 
-    d = creer_arbre('e', a, NULL);
-    d = creer_arbre('\0', NULL, d);
-    d = creer_arbre('l', d, NULL);
+    c = creer_arbre('e', a, NULL);
+    c = creer_arbre('0', NULL, c);
+    c = creer_arbre('l', c, NULL);
 
-    b = creer_arbre('i', b, d);
+    b = creer_arbre('i', b, c);
 
-    h = creer_arbre('n', a, NULL);
-    h = creer_arbre('o', h, NULL);
+    d = creer_arbre('n', a, NULL);
+    d = creer_arbre('o', d, NULL);
 
-    b = creer_arbre('a', b, h);
+    b = creer_arbre('a', b, d);
 
-    k = creer_arbre('t', a, NULL);
-    k = creer_arbre('s', a, k);
-    k = creer_arbre('o', a, k);
-    k = creer_arbre('\0', NULL, k);
-    k = creer_arbre('n', k, NULL);
-    k = creer_arbre('o', k, NULL);
-    k = creer_arbre('s', k, NULL);
-    b = creer_arbre('m', b, k);
-    dico = creer_arbre('_', b, NULL);
-    afficher_arbre_prefixe(dico);
+    e = creer_arbre('t', a, NULL);
+    e = creer_arbre('s', a, e);
+    e = creer_arbre('o', a, e);
+    e = creer_arbre('0', NULL, e);
+    e = creer_arbre('n', e, NULL);
+    e = creer_arbre('o', e, NULL);
+    e = creer_arbre('s', e, NULL);
+    b = creer_arbre('m', b, e);
+    b = creer_arbre('_', b, NULL);
+    dico = b;
+    printf("%d\n", existe(dico, "main"));
+    printf("%d\n", existe(dico, "sona"));
+    printf("%d\n", existe(dico, "mal"));
+    printf("%d\n", existe(dico, "sont"));
+    printf("%d\n", existe(dico, "sort"));
+    printf("%d\n", existe(dico, "mate"));
     exit(EXIT_SUCCESS);
 }
