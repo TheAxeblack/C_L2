@@ -1,6 +1,7 @@
 #ifndef C_ARBRE_BINAIRE_H
 #define C_ARBRE_BINAIRE_H
 
+#include "../inc/file.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
@@ -25,6 +26,12 @@ arbre inserer_fils_gauche(arbre a, arbre filsgauche);
 
 arbre inserer_fils_droit(arbre a, arbre filsdroit);
 
-void afficher_arbre(arbre a);
+void afficher_arbre_infixe(arbre a);
+
+void affiche_racine(arbre a);
+
+void afficher_arbre_postfixe(arbre a);
+
+void afficher_arbre_prefixe(arbre a);
 
 #endif

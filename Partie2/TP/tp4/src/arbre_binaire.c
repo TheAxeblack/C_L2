@@ -37,13 +37,36 @@ arbre inserer_fils_droit(arbre a, arbre filsdroit) {
 }
 
 
-/* afficher_arbre est le parcours prefixe */
-void afficher_arbre(arbre a) {
+void afficher_arbre_infixe(arbre a) {
+    if (!est_vide(a)) {
+        if (a->noeud != 0) {
+            afficher_arbre_infixe(a->gauche);
+            printf("%c", a->noeud);
+            afficher_arbre_infixe(a->droit);
+        }
+    }
+}
+
+void affiche_racine(arbre a) {
+    printf("%c", a->noeud);
+}
+
+void afficher_arbre_postfixe(arbre a) {
+    if (!est_vide(a)) {
+        if (a->noeud != 0) {
+            afficher_arbre_postfixe(a->gauche);
+            afficher_arbre_postfixe(a->droit);
+            printf("%c", a->noeud);
+        }
+    }
+}
+
+void afficher_arbre_prefixe(arbre a) {
     if (!est_vide(a)) {
         if (a->noeud != 0) {
             printf("%c", a->noeud);
-            afficher_arbre(a->gauche);
-            afficher_arbre(a->droit);
+            afficher_arbre_prefixe(a->gauche);
+            afficher_arbre_prefixe(a->droit);
         }
     }
 }

@@ -5,4 +5,6 @@
 
 arbre creer_arbre_expression(char *expression, int *position);
 
+int eval(arbre a);
+
 #endif
