@@ -1,4 +1,4 @@
-#include "tp3.h"
+#include "../inc/tp3.h"
 
 message ajouter_message(message m, element val) {
     return enfiler(m, val);

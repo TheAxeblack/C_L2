@@ -1,4 +1,4 @@
-#include "tp3.h"
+#include "../inc/tp3.h"
 
 int calcul_postfixe(int taille, char **params, pile p) {
     int i, n, res = 0;

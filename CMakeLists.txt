@@ -226,20 +226,20 @@ add_executable(C
         Partie2/TP/tp2/main.c
         Partie2/TP/tp2/pascal.c
         Partie2/TP/tp2/tp2.h
-        Partie2/TP/tp3/ex1.c
-        Partie2/TP/tp3/file.c
-        Partie2/TP/tp3/file.h
-        Partie2/TP/tp3/liste.c
-        Partie2/TP/tp3/liste.h
-        Partie2/TP/tp3/main.c
-        Partie2/TP/tp3/pile.c
-        Partie2/TP/tp3/pile.h
-        Partie2/TP/tp3/tp3.h
-        Partie2/TP/tp3/allocation.c
-        Partie2/TP/tp3/allocation.h
-        Partie2/TP/tp3/ex3.c
-        Partie2/TP/tp3/ex2.c
-        Partie2/TP/tp3/ex2.h
+        Partie2/TP/tp3/src/ex1.c
+        Partie2/TP/tp3/src/file.c
+        Partie2/TP/tp3/inc/file.h
+        Partie2/TP/tp3/src/liste.c
+        Partie2/TP/tp3/inc/liste.h
+        Partie2/TP/tp3/src/main.c
+        Partie2/TP/tp3/src/pile.c
+        Partie2/TP/tp3/inc/pile.h
+        Partie2/TP/tp3/inc/tp3.h
+        Partie2/TP/tp3/src/allocation.c
+        Partie2/TP/tp3/inc/allocation.h
+        Partie2/TP/tp3/src/ex3.c
+        Partie2/TP/tp3/src/ex2.c
+        Partie2/TP/tp3/inc/ex2.h
         Partiels/S4_1/2.1/main.c
         Partiels/S4_1/2.2/main.c
         Partiels/S4_1/3.1/main.c

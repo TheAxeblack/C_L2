@@ -1,4 +1,4 @@
-#include "tp3.h"
+#include "../inc/tp3.h"
 
 pile pile_vide() {
     return liste_vide();

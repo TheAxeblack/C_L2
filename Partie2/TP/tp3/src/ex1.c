@@ -1,4 +1,4 @@
-#include "tp3.h"
+#include "../inc/tp3.h"
 
 liste test_module_liste(liste l) {
     int elem = 0;

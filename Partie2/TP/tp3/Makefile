@@ -1,26 +1,65 @@
-CC= gcc
-OPTIONS= -W -Wall -std=c89 -pedantic -O3
-OPTIONS_MLV_1= `pkg-config --cflags MLV` `pkg-config --libs-only-other --libs-only-L MLV`
-OPTIONS_MLV_2= `pkg-config --libs-only-l MLV`
-MATHS_OPTIONS= -lm
+CC = gcc
+OPTIONS = -W -Wall -g -std=c89 -pedantic -O3 `pkg-config --cflags MLV`
+DEBUG = -W -Wall -pedantic -std=c89 -g `pkg-config --cflags MLV`
+MLV = `pkg-config --libs-only-l MLV` `pkg-config --libs-only-other --libs-only-L MLV`
 
-OBJ=allocation.o liste.o pile.o file.o ex1.o ex2.c ex3.o
+TXT_FILES = $(wildcard src/*.c)
+DAT_FILES = $(patsubst src/%.c, obj/%.o, $(TXT_FILES))
+DEB_FILES = $(patsubst src/%.c, obj/%.do, $(TXT_FILES))
 
-tp3: $(OBJ)
-	$(CC) $(OPTIONS_MLV_1) $(OPTIONS) main.c $(OBJ) -o $@ $(OPTIONS_MLV_2)
-ex3.o: ex3.c tp3.h
-	$(CC) $(OPTIONS) -c ex3.c
-ex2.o: ex2.c tp3.h
-	$(CC) $(OPTIONS) -c ex2.c
-ex1.o: ex1.c tp3.h
-	$(CC) $(OPTIONS_MLV_1) $(OPTIONS) -c ex1.c $(OPTIONS_MLV_2)
-allocation.o: allocation.c tp3.h
-	$(CC) $(OPTIONS) -c allocation.c
-liste.o: liste.c tp3.h
-	$(CC) $(OPTIONS) -c liste.c
-pile.o: pile.c tp3.h
-	$(CC) $(OPTIONS) -c pile.c
-file.o: file.c tp3.h
-	$(CC) $(OPTIONS) -c file.c
-clean:
-	rm -rf *.o tp3
+all:
+	make bin/prog
+	make bin/debug
+
+prog:
+	bin/prog
+
+debug:
+	bin/debug
+
+bin/prog: $(DAT_FILES)
+	$(CC) $(OPTIONS) $(DAT_FILES) -o $@ $(MLV)
+
+bin/debug: $(DEB_FILES)
+	$(CC) $(DEBUG)  $(DEB_FILES) -o $@ $(MLV)
+
+obj/%.do: src/%.c
+	$(CC) $(DEBUG)  -Iinc -c $< -o $@
+
+obj/%.o : src/%.c
+	$(CC) $(OPTIONS) -Iinc -c $< -o $@
+
+clean :
+	rm -rf obj/* */*~ bin/*CC = gcc
+OPTIONS = -W -Wall -g -std=c89 -pedantic -O3 `pkg-config --cflags MLV`
+DEBUG = -W -Wall -pedantic -std=c89 -g `pkg-config --cflags MLV`
+MLV = `pkg-config --libs-only-l MLV` `pkg-config --libs-only-other --libs-only-L MLV`
+
+TXT_FILES = $(wildcard src/*.c)
+DAT_FILES = $(patsubst src/%.c, obj/%.o, $(TXT_FILES))
+DEB_FILES = $(patsubst src/%.c, obj/%.do, $(TXT_FILES))
+
+all:
+	make bin/prog
+	make bin/debug
+
+prog:
+	bin/prog
+
+debug:
+	bin/debug
+
+bin/prog: $(DAT_FILES)
+	$(CC) $(OPTIONS) $(DAT_FILES) -o $@ $(MLV)
+
+bin/debug: $(DEB_FILES)
+	$(CC) $(DEBUG)  $(DEB_FILES) -o $@ $(MLV)
+
+obj/%.do: src/%.c
+	$(CC) $(DEBUG)  -Iinc -c $< -o $@
+
+obj/%.o: src/%.c
+	$(CC) $(OPTIONS) -Iinc -c $< -o $@
+
+clean :
+	rm -rf obj/* */*~ bin/*

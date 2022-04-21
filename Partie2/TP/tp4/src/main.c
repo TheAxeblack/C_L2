@@ -5,7 +5,7 @@
 int main(int argc, char **argv) {
 
     int acc = 0;
-    int *position = &acc; 
+    int *position = &acc;
 
     int res = 0;
 
@@ -33,12 +33,12 @@ int main(int argc, char **argv) {
     afficher_arbre_prefixe(a);
     printf("\n");
 
-    
-    MLV_create_window( "Arbre graphique", "tp4", 640, 480 );
+
+    /*MLV_create_window("Arbre graphique", "tp4", 640, 480);
     afficher_arbre_graphique(a);
     MLV_actualise_window();
     MLV_wait_seconds(2);
-    MLV_free_window();
+    MLV_free_window();*/
     printf("\n\n--------- Test du module postfixe_inversee.c ---------\n"
            "Expression d'origine : %s\nArbre obtenu : ", argv[1]);
     j = creer_arbre_expression(argv[1], position);

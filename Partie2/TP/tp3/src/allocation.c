@@ -1,4 +1,4 @@
-#include "tp3.h"
+#include "../inc/tp3.h"
 
 void libere_mem(void *pt) {
     void **adr_pt = (void **) pt;
