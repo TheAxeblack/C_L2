@@ -66,3 +66,14 @@ void afficher_arbre_prefixe(arbre a) {
         }
     }
 }
+
+void afficher_arbre_graphique(arbre a) {
+    if (!est_vide(a)) {
+        if (a->noeud != 0)
+        {
+            MLV_draw_text(320, 40, "%c",  MLV_COLOR_MAGENTA, a->noeud);
+            afficher_arbre_graphique(a->gauche);
+            afficher_arbre_graphique(a->droit);
+        }
+    }
+}

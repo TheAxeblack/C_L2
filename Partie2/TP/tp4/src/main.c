@@ -5,7 +5,7 @@
 int main(int argc, char **argv) {
 
     int acc = 0;
-    int *position = &acc;
+    int *position = &acc; 
 
     int res = 0;
 
@@ -17,7 +17,7 @@ int main(int argc, char **argv) {
         ft_usage(argv[0]);
 
 
-    printf("Test du module arbre_binaire.c\n");
+    printf("--------- Test du module arbre_binaire.c ---------\n");
 
     d = creer_noeud(2 + '0');
     e = creer_noeud(5 + '0');
@@ -31,7 +31,15 @@ int main(int argc, char **argv) {
     a = creer_arbre('*', b, c);
 
     afficher_arbre_prefixe(a);
-    printf("\nFin du test du module arbre_binaire.c\n\n--------- Test du module postfixe_inversee.c ---------\n"
+    printf("\n");
+
+    
+    MLV_create_window( "Arbre graphique", "tp4", 640, 480 );
+    afficher_arbre_graphique(a);
+    MLV_actualise_window();
+    MLV_wait_seconds(2);
+    MLV_free_window();
+    printf("\n\n--------- Test du module postfixe_inversee.c ---------\n"
            "Expression d'origine : %s\nArbre obtenu : ", argv[1]);
     j = creer_arbre_expression(argv[1], position);
     afficher_arbre_prefixe(j);
@@ -45,7 +53,7 @@ int main(int argc, char **argv) {
     printf("Résultat de l'evaluation de l'arbre ");
     afficher_arbre_prefixe(j);
     printf(" = %d\n", res);
-    printf("Fin du test du module postfixe_inversee.c\n\n--------- Test du module dictionnaire.c ---------\n");
+    printf("\n--------- Test du module dictionnaire.c ---------\n");
 
     /* Creation arbre dico de l'exemple */
     a = creer_noeud('0'); /* noeud '\0' */
