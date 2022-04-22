@@ -36,7 +36,6 @@ arbre inserer_fils_droit(arbre a, arbre filsdroit) {
     return a;
 }
 
-
 void afficher_arbre_infixe(arbre a) {
     if (!est_vide(a)) {
         if (a->noeud != 0) {

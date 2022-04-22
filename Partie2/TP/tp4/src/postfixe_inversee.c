@@ -40,7 +40,7 @@ int eval(arbre a) {
             case '/':
                 return evalg / evald;
             default:
-                fprintf(stderr, "L'operateur n'est pas renseigne\n");
+                fprintf(stderr, "L'operateur n'est pas present dans la liste\n");
                 exit(EXIT_FAILURE);
         }
     }
