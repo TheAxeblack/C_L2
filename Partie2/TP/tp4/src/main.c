@@ -82,11 +82,11 @@ int main(int argc, char **argv) {
     b = creer_arbre('m', b, e);
     b = creer_arbre('_', b, NULL);
     dico = b;
-    printf("%d\n", existe(dico, "main"));
-    printf("%d\n", existe(dico, "sona"));
-    printf("%d\n", existe(dico, "mal"));
-    printf("%d\n", existe(dico, "sont"));
-    printf("%d\n", existe(dico, "sort"));
-    printf("%d\n", existe(dico, "mate"));
+    printf("existe(%s) :\n\tResultat attendu = 1\n\tResultat obtenu = %d\n\n", "main", existe(dico, "main"));
+    printf("existe(%s) :\n\tResultat attendu = 0\n\tResultat obtenu = %d\n\n", "sona", existe(dico, "sona"));
+    printf("existe(%s) :\n\tResultat attendu = 1\n\tResultat obtenu = %d\n\n", "mal", existe(dico, "mal"));
+    printf("existe(%s) :\n\tResultat attendu = 1\n\tResultat obtenu = %d\n\n", "sont", existe(dico, "sont"));
+    printf("existe(%s) :\n\tResultat attendu = 0\n\tResultat obtenu = %d\n\n", "sort", existe(dico, "sort"));
+    printf("existe(%s) :\n\tResultat attendu = 0\n\tResultat obtenu = %d\n", "mate", existe(dico, "mate"));
     exit(EXIT_SUCCESS);
 }
