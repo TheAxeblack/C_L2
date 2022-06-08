@@ -1,4 +1,4 @@
-/*
+/**
  *Exemple d'implementation de pile avec un tableau
  *fiche d'en-tete
  *

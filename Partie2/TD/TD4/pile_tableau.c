@@ -1,4 +1,4 @@
-/*
+/**
  *Exemple d'implementation de pile avec un tableau
  *
  *pour plus de g�n�ricit� et de portabilit�, la pile
