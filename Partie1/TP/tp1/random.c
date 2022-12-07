@@ -22,7 +22,7 @@ void ft_rand(void)
   p = n;
   n = m;
   m = tmp;
-  printf("SWITCH fini : \nm = %d, n = %d, p = %d et q = %d\n", m, n , p, q);
+  printf("SWITCH fini : \nm = %d, n = %d, p = %d et q = %d\n", m, n, p, q);
 }
 
 int main(void)
