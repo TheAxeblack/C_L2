@@ -2,22 +2,26 @@
 #include <stdlib.h>
 #include "types.h"
 
-tablette creer_tablette(int n, int m) {
+tablette creer_tablette(int n, int m)
+{
     int i;
     int j;
     tablette t;
 
     t.n = n;
     t.m = m;
-    for (i = 0; i < n; i++) {
-        for (j = 0; j < m; j++) {
+    for (i = 0; i < n; i++)
+    {
+        for (j = 0; j < m; j++)
+        {
             t.terrain[i][j] = 1;
         }
     }
     return t;
 }
 
-void manger(tablette *t, int x, int y) {
+void manger(tablette *t, int x, int y)
+{
     int i;
     int j;
     int n;
@@ -25,21 +29,26 @@ void manger(tablette *t, int x, int y) {
 
     n = t->n;
     m = t->m;
-    for (i = x; i < n; i++) {
-        for (j = y; j < m; j++) {
+    for (i = x; i < n; i++)
+    {
+        for (j = y; j < m; j++)
+        {
             t->terrain[i][j] = 0;
         }
     }
 
-    for (i = 0; i < n; i++) {
-        for (j = 0; j < m; j++) {
+    for (i = 0; i < n; i++)
+    {
+        for (j = 0; j < m; j++)
+        {
             printf("%d ", t->terrain[i][j]);
         }
         printf("\n");
     }
 }
 
-int est_legal(configuration *config, coup *cp) {
+int est_legal(configuration *config, coup *cp)
+{
     int c;
     int y;
     tablette t;
@@ -53,20 +62,23 @@ int est_legal(configuration *config, coup *cp) {
     return 1;
 }
 
-int est_finie(configuration *config, joueur *gagnant) {
+int est_finie(configuration *config, joueur *gagnant)
+{
     tablette t;
 
     t = config->tab[N][M];
-    if (t.terrain[0][0] == 0) {
+    if (t.terrain[0][0] == 0)
+    {
         return 1;
     }
     return 0;
 }
 
-void jouer_coup(configuration *config, coup *cp) {
+void jouer_coup(configuration *config, coup *cp)
+{
     tablette t;
-    t = config->tab[][]
-    if (est_legal(config, cp) == 1) {
+    t = config->tab[][] if (est_legal(config, cp) == 1)
+    {
         manger(t, cp->c, cp->y);
         if (config->j == J1)
             config->j = J2;
@@ -79,13 +91,14 @@ void jouer_coup(configuration *config, coup *cp) {
     }
 }
 
-int main(void) {
+int main(void)
+{
     tablette tablette1;
     tablette *pointeurtablette;
-    
+
     tablette1 = creer_tablette(2, 5);
     pointeurtablette = &tablette1;
     while (est_finie())
-    manger(pointeurtablette, 0, 2);
+        manger(pointeurtablette, 0, 2);
     exit(EXIT_SUCCESS);
 }

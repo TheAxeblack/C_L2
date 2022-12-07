@@ -7,6 +7,6 @@ int main(int argc, char **argv)
   MLV_draw_filled_rectangle(300, 220, 150, 70, MLV_COLOR_RED);
 
   MLV_actualise_window();
-  
+
   MLV_wait_seconds(10);
 }
