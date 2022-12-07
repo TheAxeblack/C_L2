@@ -14,20 +14,20 @@ int main(int argc, char **argv)
 
   n = 2;
   if (argc != 2)
-    {
-      ft_usage(argv[0]);
-      exit(EXIT_FAILURE);
-    }
+  {
+    ft_usage(argv[0]);
+    exit(EXIT_FAILURE);
+  }
   else
+  {
+    x = atof(argv[1]);
+    res = x;
+    while (n <= 10)
     {
-      x = atof(argv[1]);
-      res = x;
-      while(n <= 10)
-	{
-	  res *= x;
-	  printf("%f^%d = %f\n", x, n, res);
-	  n++;
-	}
+      res *= x;
+      printf("%f^%d = %f\n", x, n, res);
+      n++;
     }
+  }
   exit(EXIT_SUCCESS);
 }

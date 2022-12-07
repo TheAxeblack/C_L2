@@ -14,19 +14,19 @@ int main(int argc, char **argv)
   n = 0;
   i = 0;
   if (argc != 2)
-    {
-      ft_usage(argv[0]);
-      exit(EXIT_FAILURE);
-    }
+  {
+    ft_usage(argv[0]);
+    exit(EXIT_FAILURE);
+  }
   else
+  {
+    n = atoi(argv[1]);
+    while (i < n)
     {
-      n = atoi(argv[1]);
-      while (i < n)
-	{
-	  printf("*");
-	  i++;
-	}
-      printf("\n");
+      printf("*");
+      i++;
     }
+    printf("\n");
+  }
   exit(EXIT_SUCCESS);
 }

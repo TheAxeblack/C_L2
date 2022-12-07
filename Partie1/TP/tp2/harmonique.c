@@ -21,19 +21,19 @@ int main(void)
   res = 0;
   printf("Entrer la valeur de n :\n");
   if (scanf("%d", &n) != 1)
-    {
-      printf("Vous n'avez pas le bon nombre d'arguments.\nRappel, nous n'avons besoin que d'une valeur et il doit s'agir d'un entier.\n");
-      ft_kbuffer();
-      exit(EXIT_FAILURE);
-    }
+  {
+    printf("Vous n'avez pas le bon nombre d'arguments.\nRappel, nous n'avons besoin que d'une valeur et il doit s'agir d'un entier.\n");
+    ft_kbuffer();
+    exit(EXIT_FAILURE);
+  }
   else
+  {
+    while (i <= n)
     {
-      while (i <= n)
-	{
-	  res += 1.0/i;
-	  i++;
-	}
-      printf("Fn = %f\n", res);
+      res += 1.0 / i;
+      i++;
     }
+    printf("Fn = %f\n", res);
+  }
   exit(EXIT_SUCCESS);
 }
