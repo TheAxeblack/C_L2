@@ -1,18 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int question(void) {
+int question(void)
+{
     int x;
     printf("How much numbers?\n");
-    if (scanf("%d", &x) != 1) {
+    if (scanf("%d", &x) != 1)
+    {
         printf("Error\n");
         return (1);
-    } else {
+    }
+    else
+    {
         return (x);
     }
 }
 
-int main(void) {
+int main(void)
+{
     int i;
     int x;
     int mini;
@@ -20,8 +25,8 @@ int main(void) {
     int tmp;
     x = question();
     i = 0;
-    while (i <= x) {
+    while (i <= x)
+    {
         printf("Entrer un entier\n")
-
     }
 }

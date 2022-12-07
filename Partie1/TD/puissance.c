@@ -1,11 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void ft_usage(char *nom) {
+void ft_usage(char *nom)
+{
     printf("usage %s <entier>\n", nom);
 }
 
-int main(int argc, char **argv) {
+int main(int argc, char **argv)
+{
     int n;
     double x;
     double res;
