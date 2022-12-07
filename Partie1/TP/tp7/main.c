@@ -2,7 +2,8 @@
 #include <stdlib.h>
 #include "lecture.h"
 
-int main(void) {
+int main(void)
+{
     tab tab1;
     int nbr;
     nbr = stockage(tab1);
