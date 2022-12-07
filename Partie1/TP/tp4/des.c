@@ -4,11 +4,13 @@
 
 #define NB_MAX 601
 
-void ft_usage(char *nom) {
+void ft_usage(char *nom)
+{
     fprintf(stderr, "usage %s : <entier1> <entier2>, <entier1> > 0, <entier2> > 0", nom);
 }
 
-void lancer(int nb_des, int nb_lances, int tab_occ[]) {
+void lancer(int nb_des, int nb_lances, int tab_occ[])
+{
     int i;
     for (i = 0; i < nb_lances; i++)
     {
@@ -18,14 +20,15 @@ void lancer(int nb_des, int nb_lances, int tab_occ[]) {
     fprintf(stdout, "\n");
 }
 
-
-void afficher(int nb_des, int tab_occ[]) {
+void afficher(int nb_des, int tab_occ[])
+{
     int i;
     int j;
     int nb_faces;
 
     nb_faces = 6 * nb_des;
-    for (i = nb_des; i <= nb_faces; i++) {
+    for (i = nb_des; i <= nb_faces; i++)
+    {
         fprintf(stdout, "%d ", i);
         j = 0;
         while (j < tab_occ[i])
@@ -37,7 +40,8 @@ void afficher(int nb_des, int tab_occ[]) {
     }
 }
 
-int main(int argc, char **argv) {
+int main(int argc, char **argv)
+{
     int i;
 
     if (argc != 3)

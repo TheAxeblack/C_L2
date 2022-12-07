@@ -5,15 +5,16 @@
 #define NB_MAX 1024
 #define N 25
 
-
-void renversement(int n, int *t) {
+void renversement(int n, int *t)
+{
     int i;
     int tmp;
     int limit;
 
     i = 0;
     limit = n / 2;
-    while (i < limit) {
+    while (i < limit)
+    {
         tmp = t[(n - 1) - i];
         t[(n - 1) - i] = t[i];
         t[i] = tmp;
@@ -21,22 +22,28 @@ void renversement(int n, int *t) {
     }
 }
 
-void decallage(int n, int *t, char dir) {
+void decallage(int n, int *t, char dir)
+{
     int i;
     int tmp;
 
-    if (dir == 'g') {
+    if (dir == 'g')
+    {
         tmp = t[0];
         i = 0;
-        while (i < n - 1) {
+        while (i < n - 1)
+        {
             t[i] = t[i + 1];
             i++;
         }
         t[n - 1] = tmp;
-    } else {
+    }
+    else
+    {
         tmp = t[n - 1];
         i = n - 1;
-        while (i > 0) {
+        while (i > 0)
+        {
             t[i] = t[i - 1];
             i--;
         }
@@ -44,17 +51,20 @@ void decallage(int n, int *t, char dir) {
     }
 }
 
-void permutCirculaire(int n, int *t, int k) {
+void permutCirculaire(int n, int *t, int k)
+{
     int i;
     int t_tmp[NB_MAX];
 
     i = 0;
-    while (i < n) {
+    while (i < n)
+    {
         t_tmp[(i + k) % n] = t[i];
         i++;
     }
     i = 0;
-    while (i < n) {
+    while (i < n)
+    {
         t[i] = t_tmp[i];
         i++;
     }
@@ -62,22 +72,27 @@ void permutCirculaire(int n, int *t, int k) {
 
 /* Fonctions de l'exercice precedent */
 
-void remplir_tab_alea(int t[], int n) {
+void remplir_tab_alea(int t[], int n)
+{
     int i;
 
     i = 0;
     srand(time(NULL));
-    while (i < n) {
+    while (i < n)
+    {
         t[i] = (rand() % (15 - (-15) + 1)) + (-15);
         i++;
     }
 }
 
-void afficher_tab(int t[], int n) {
+void afficher_tab(int t[], int n)
+{
     int i;
 
-    i = 0;;
-    while (i < n) {
+    i = 0;
+    ;
+    while (i < n)
+    {
         if (i > (n - 2) && i <= (n - 1))
             printf("%d", t[i]);
         else
@@ -87,7 +102,8 @@ void afficher_tab(int t[], int n) {
     printf("\n");
 }
 
-int main(void) {
+int main(void)
+{
     int t4[N];
 
     remplir_tab_alea(t4, N);
