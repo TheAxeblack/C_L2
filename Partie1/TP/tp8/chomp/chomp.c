@@ -22,10 +22,7 @@ tablette creer_tablette(int n, int m)
 
 void manger(tablette *t, int x, int y)
 {
-    int i;
-    int j;
-    int n;
-    int m;
+    int i, j, n, m;
 
     n = t->n;
     m = t->m;
@@ -49,13 +46,12 @@ void manger(tablette *t, int x, int y)
 
 int est_legal(configuration *config, coup *cp)
 {
-    int c;
-    int y;
+    int c, y;
     tablette t;
 
     c = cp->c;
     y = cp->y;
-    t = config->tab[N][M];
+    t = config->tab;
 
     if (t.terrain[c][y] == 0)
         return 0;
@@ -66,7 +62,7 @@ int est_finie(configuration *config, joueur *gagnant)
 {
     tablette t;
 
-    t = config->tab[N][M];
+    t = config->tab.terrain;
     if (t.terrain[0][0] == 0)
     {
         return 1;
@@ -77,9 +73,11 @@ int est_finie(configuration *config, joueur *gagnant)
 void jouer_coup(configuration *config, coup *cp)
 {
     tablette t;
-    t = config->tab[][] if (est_legal(config, cp) == 1)
+    t = config->tab;
+
+    if (est_legal(config, cp) == 1)
     {
-        manger(t, cp->c, cp->y);
+        manger(&t, cp->c, cp->y);
         if (config->j == J1)
             config->j = J2;
         else if (config->j == J2)
@@ -95,10 +93,14 @@ int main(void)
 {
     tablette tablette1;
     tablette *pointeurtablette;
-
+    configuration *config;
+    joueur j;
     tablette1 = creer_tablette(2, 5);
     pointeurtablette = &tablette1;
-    while (est_finie())
+    j
+        config->tab = tablette1;
+    config->j = j;
+    while (est_finie(config, j))
         manger(pointeurtablette, 0, 2);
     exit(EXIT_SUCCESS);
 }

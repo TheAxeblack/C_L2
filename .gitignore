@@ -1,8 +1,6 @@
-
-cmake-build-debug/
-
 .idea/
-
-CMakeLists.txt
-
 .vscode/
+
+Partiels/*
+Partie1/training_exams/*
+Partie2/CM/*

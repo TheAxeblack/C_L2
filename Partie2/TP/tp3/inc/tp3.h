@@ -1,7 +1,6 @@
 #ifndef TP_TP3_H
 #define TP_TP3_H
 
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
@@ -37,7 +36,6 @@ message ajouter_message(message m, element val);
 message supprimer_message(message m);
 
 message afficher_message(message m);
-
 
 /* Fonctions de l'exercice 3 */
 int calcul_postfixe(int taille, char **params, pile p);

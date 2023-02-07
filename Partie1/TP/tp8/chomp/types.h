@@ -16,7 +16,7 @@ typedef enum joueur
 
 typedef struct
 {
-    tablette tab[N][M];
+    tablette tab;
     joueur j;
 } configuration;
 

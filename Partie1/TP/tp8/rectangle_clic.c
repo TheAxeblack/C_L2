@@ -19,6 +19,7 @@ int main(int argc, char **argv)
   y_s = 10;
   w = 200;
   h = 120;
+  
   do
   {
     if (i % 2 == 0)

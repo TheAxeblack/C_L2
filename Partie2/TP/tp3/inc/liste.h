@@ -3,7 +3,8 @@
 
 typedef int element;
 
-typedef struct cellule {
+typedef struct cellule
+{
     element objet;
     struct cellule *suivant;
 } struct_cellule;
