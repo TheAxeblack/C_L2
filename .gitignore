@@ -5,3 +5,6 @@ Partiels/*
 Partie1/training_exams/*
 Partie1/*.pdf
 Partie2/CM/*
+
+CMakeLists.txt
+cmake-build-debug/

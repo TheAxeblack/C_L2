@@ -1,7 +1,6 @@
 #define NB_MAX 400
 
-typedef struct
-{
+typedef struct {
     int numero;
     char nom[NB_MAX];
     char prenom[NB_MAX];

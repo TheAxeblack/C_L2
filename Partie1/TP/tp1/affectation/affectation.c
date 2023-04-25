@@ -1,8 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void ft_valeurs(void)
-{
+void ft_valeurs(void) {
     int a, b, c, d;
 
     a = 5;
@@ -17,8 +16,7 @@ void ft_valeurs(void)
     printf("a = %d, b = %d, c = %d et d = %d\n", a, b, c, d);
 }
 
-int main(void)
-{
+int main(void) {
     ft_valeurs();
     exit(EXIT_SUCCESS);
 }

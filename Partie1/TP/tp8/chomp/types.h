@@ -1,27 +1,23 @@
 #define N 20
 #define M 20
 
-typedef struct
-{
+typedef struct {
     short n;
     short m;
     short terrain[N][M];
 } tablette;
 
-typedef enum joueur
-{
+typedef enum joueur {
     J1,
     J2
 } joueur;
 
-typedef struct
-{
+typedef struct {
     tablette tab;
     joueur j;
 } configuration;
 
-typedef struct
-{
+typedef struct {
     short c;
     short y;
 } coup;

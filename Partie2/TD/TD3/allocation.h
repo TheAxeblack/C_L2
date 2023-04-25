@@ -16,7 +16,7 @@
  *pour un nombre nobjets
  *alloue un espace de memoire de taille  nobjets*taille octets
  */
-void * allocation_mem(size_t nobjets,size_t taille);
+void *allocation_mem(size_t nobjets, size_t taille);
 
 
 /*--------------------------------------------------------------------
@@ -24,7 +24,7 @@ void * allocation_mem(size_t nobjets,size_t taille);
  *pour un nombre nobjets, l'espace mémoire est initialise à 0 (null)
  *alloue un espace de memoire de taille  nobjets*taille octets
  */
-void * allocation_mem_init0(size_t nobjets,size_t taille);
+void *allocation_mem_init0(size_t nobjets, size_t taille);
 
 
 /*--------------------------------------------------------------------
@@ -33,7 +33,7 @@ void * allocation_mem_init0(size_t nobjets,size_t taille);
  * l'adresse memoire deja allouee est definie par (*ptr) 
  * l'espace alloue est de taille nobjets*taille octets
  */
-void* reallocation_mem(void *pt, size_t nobjets,size_t taille);
+void *reallocation_mem(void *pt, size_t nobjets, size_t taille);
 
 /*--------------------------------------------------------------------
  *fonction qui realloue un espace memoire DEJA ALLOUE precedemment
@@ -42,7 +42,7 @@ void* reallocation_mem(void *pt, size_t nobjets,size_t taille);
  * l'espace alloue est de taille nobjets*taille octets
   * cette fonction modifie le pointeur *pt en l'affectant à la nouvelle adresse
   */
-void* reallocation_mem_peda(void **pt, size_t nobjets,size_t taille);
+void *reallocation_mem_peda(void **pt, size_t nobjets, size_t taille);
 
 /*--------------------------------------------------------------------
  fonction qui libere de la memoire allouee en *pt
@@ -57,7 +57,6 @@ void libere_mem(void *pt);
   version pédagogique qui force à entrer un adresse de pointeur
   mais qui nécessite un cast pour éviter un warning*/
 void libere_mem_peda(void **pt);
-
 
 
 /*--------------------------------------------------------------------
