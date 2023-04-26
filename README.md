@@ -6,7 +6,7 @@ Ce dépot à pour but de conserver toutes les activitées réalisées lors de ma
 
 ### TD
 
-Vous trouverez dans le dossier les fichiers .txt décrivant ce qu'est censé faire le fichier .c associé.
+Vous trouverez dans le dossier les fichiers README.md décrivant ce qu'est censé faire le fichier .c associé.
 
 Pour lancer les compilations des différents codes présent dans ce dossier, on utilisera la commande suivante.
 
@@ -28,3 +28,5 @@ gcc -W -Wall -std=c89 -pedantic -O3 <nom_ficher.c> -o <nom_exe> -lm
 ```
 
 ### TP
+
+
