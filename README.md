@@ -6,9 +6,9 @@ Ce repository a pour but de conserver toutes les activités réalisées lors de 
 
 Cette partie contient principalement du code en langage C de niveau débutant, ce qui est normal puisqu'il s'agit d'une introduction à ce langage.
 
-### TD (Travaux Dirigés)
+### TP (Travaux Pratiques)
 
-Dans ce dossier, vous trouverez des fichiers README.md décrivant ce que chaque fichier .c associé est censé faire.
+Dans chacun des répertoires d'exercices, vous trouverez un README vous indiquant ce que le fichier .c associé doit faire.
 
 Pour compiler les différents codes présents dans ce dossier, vous pouvez utiliser la commande suivante :
 
@@ -27,10 +27,6 @@ dans ce cas la commande à utiliser est la suivante :
 ```bash
 gcc -W -Wall -std=c89 -pedantic -O3 <nom_fichier.c> -o <nom_executable> -lm
 ```
-
-### TP (Travaux Pratiques)
-
-Dans chacun des répertoires d'exercices, vous trouverez un README vous indiquant ce que le fichier .c associé doit faire.
 
 ## Partie 2 - Manipulation des pointeurs et TAD (Types Abstraits de Données)
 
