@@ -7,4 +7,10 @@ Une matrice $n \times m$ est un tableau à $n$ lignes et $m$ colonnes, ici conte
     1. Addition de deux matrices :\
     `addition(int A[][], int B[][], int C[][], int n, int m)`.\
     La fonction calcule le résultat de l'opération et le stocke dans la matrice $A$
-    2. 
+    2. Multiplication de deux matrices :\
+    `multiplication(int A[][], int B[][], int C[][], int n, int m)`.\
+    La fonction calcul le résultat de l'opération et le stocke dans la matrice $A$
+    3. Transposition de matrice :\
+    `transpose(int A_tr[][], int A[][], int n, int m)`.
+    La fonction calcul le résultat de l'opération et le stocke dans `A_tr`
+4. Définir la fonction `main()` vous permettant de tester ces différentes fonctions.
