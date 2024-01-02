@@ -1,14 +1,12 @@
 # C_L2
 
-Ce repository a pour but de conserver toutes les activités réalisées lors de ma deuxième année de licence dans l'UE **Programmation impérative**.
+Ce repository conserve les activités réalisées lors de ma deuxième année de licence dans l'UE **Programmation impérative**.
 
-## Partie 1 - Découverte du langage C
+## Objectif
 
-Cette partie contient principalement du code en langage C de niveau débutant, ce qui est normal puisqu'il s'agit d'une introduction à ce langage.
+Ce projet vise à consolider les compétences en langage C acquises au cours de cette année. Vous trouverez dans ce repository différents TP regroupés par thématique.
 
-### TP (Travaux Pratiques)
-
-Dans chacun des répertoires d'exercices, vous trouverez un README vous indiquant ce que le fichier .c associé doit faire.
+## Compilation
 
 Pour compiler les différents codes présents dans ce dossier, vous pouvez utiliser la commande suivante :
 
@@ -16,18 +14,35 @@ Pour compiler les différents codes présents dans ce dossier, vous pouvez utili
 gcc -W -Wall -std=c89 -pedantic -O3 <nom_fichier.c> -o <nom_executable>
 ```
 
-**_Attention !_** Certains codes utilisent la bibliothèque **math.h**, que l'on inclut de cette manière :
+Certains codes utilisent la bibliothèque **math.h**, incluse de cette manière :
 
 ```c
 #include <math.h>
 ```
 
-dans ce cas la commande à utiliser est la suivante :
+Pour les compiler, utilisez :
 
 ```bash
 gcc -W -Wall -std=c89 -pedantic -O3 <nom_fichier.c> -o <nom_executable> -lm
 ```
 
-## Partie 2 - Manipulation des pointeurs et TAD (Types Abstraits de Données)
+## Structure du Projet
 
-Au programme : des pointeurs, encore des pointeurs et... encore des pointeurs ! Vous êtes prêt à vous plonger dedans !
+### Partie 1 - Découverte du langage C
+
+#### TP (Travaux Pratiques)
+
+- [tp1_Premiers_programmes](Partie1/TP/tp1_Premiers_programmes)
+- [tp2_Boucles](Partie1/TP/tp2_Boucles)
+- [tp3_Nbre_mystere](Partie1/TP/tp3_Nbre_mystere)
+- [tp4_Tableaux_et_fonctions](Partie1/TP/tp4_Tableaux_et_fonctions)
+- [tp5](Partie1/TP/tp5)
+- [tp6](Partie1/TP/tp6)
+- [tp7](Partie1/TP/tp7)
+- [tp8](Partie1/TP/tp8)
+
+### Partie 2 - Manipulation des pointeurs et TAD (Types Abstraits de Données)
+
+#### TD (Travaux Dirigés)
+
+#### TP (Travaux Pratiques)
