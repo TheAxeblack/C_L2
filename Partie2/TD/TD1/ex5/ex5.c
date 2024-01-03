@@ -1,10 +1,10 @@
 /**
  * Programme calculant les valeurs d'une carte � joueur
- * 
+ *
  * fonction erreur laiss�e "au cas o�", on voit ici l'interet de la
  * compilation separee
  *
- * historique: 
+ * historique:
  *  creation le 22/01/2017 - A. Habrard
  *  MAJ      le 22/01/2018 - A. Habrard - comparaison chaines
  *  MAJ      le 20/01/2020 - A. Habrard - ajout d'une methode basee uniquement sur des caracteres+gestion boucle
@@ -18,7 +18,6 @@
 #include <stdarg.h>
 #include <string.h>
 
-
 /*declaration des fonctions*/
 void mon_erreur(char *format, ...);
 
@@ -28,7 +27,6 @@ int calculer_carte_avec_caracteres_uniquement(char *card_name);
 
 void vider_buffer();
 
-
 /*definitions fonctions*/
 
 /*----
@@ -36,37 +34,47 @@ void vider_buffer();
  * peut prendre plusieurs args pour l'affichage de format
  */
 
-void mon_erreur(char *format, ...) {
+void mon_erreur(char *format, ...)
+{
     va_list arg;
 
     va_start(arg, format);
 
     fprintf(stderr, "Erreur - ");
 
-    vfprintf(stderr, format, arg);/*affichage de la chaine format*/
+    vfprintf(stderr, format, arg); /*affichage de la chaine format*/
 
     va_end(arg);
 
-    exit(EXIT_FAILURE);/*on sort de l'application, on utilise exit ici*/
+    exit(EXIT_FAILURE); /*on sort de l'application, on utilise exit ici*/
 }
 
-
-/* ---- 
+/* ----
  * Fonction de calcul de valeur de carte
  * Note: on pourrait utiliser un switch
  */
-int calculer_valeur_carte(char card_name[]) {
+int calculer_valeur_carte(char card_name[])
+{
     int val = -1;
 
-    if (strcmp(card_name, "K") == 0) {
+    if (strcmp(card_name, "K") == 0)
+    {
         val = 10;
-    } else if (strcmp(card_name, "Q") == 0) {
+    }
+    else if (strcmp(card_name, "Q") == 0)
+    {
         val = 10;
-    } else if (strcmp(card_name, "J") == 0) {
+    }
+    else if (strcmp(card_name, "J") == 0)
+    {
         val = 10;
-    } else if (strcmp(card_name, "A") == 0) {
+    }
+    else if (strcmp(card_name, "A") == 0)
+    {
         val = 11;
-    } else {
+    }
+    else
+    {
         val = atoi(card_name);
 
         if (val < 1 || val > 10)
@@ -76,18 +84,24 @@ int calculer_valeur_carte(char card_name[]) {
     return val;
 }
 
-/* ---- 
+/* ----
  * Fonction de calcul de valeur de carte
  * utilisant uniquement des caract�res
  */
-int calculer_carte_avec_caracteres_uniquement(char *card_name) {
+int calculer_carte_avec_caracteres_uniquement(char *card_name)
+{
     int val = -1;
     if (card_name[0] == 'K' || card_name[0] == 'Q' || card_name[0] == 'J' ||
-        (card_name[0] == '1' && card_name[1] == '0')) {
+        (card_name[0] == '1' && card_name[1] == '0'))
+    {
         val = 10;
-    } else if (card_name[0] == 'A') {
+    }
+    else if (card_name[0] == 'A')
+    {
         val = 11;
-    } else {
+    }
+    else
+    {
         val = card_name[0] - '0';
 
         /* test pour savoir si le contenu de card_name est bien conforme aux attentes                  */
@@ -100,19 +114,22 @@ int calculer_carte_avec_caracteres_uniquement(char *card_name) {
 }
 
 /*fonction main*/
-int main() {
+int main()
+{
     char card_name[3];
-    int valeur = 0;  /*valeur obtenue pour la lecture par chaine */
+    int valeur = 0;             /*valeur obtenue pour la lecture par chaine */
     int valeur_2emeversion = 0; /*valeur obtenue pour la lecture par caracteres */
-    short on_continue = 1; /*variable booleene pour continuer la lecture des cartes */
-    int retour_scanf = 0; /*variable de v�rification du retour du scanf */
+    short on_continue = 1;      /*variable booleene pour continuer la lecture des cartes */
+    int retour_scanf = 0;       /*variable de v�rification du retour du scanf */
 
-    do {
+    do
+    {
         /*r�cup�ration de la carte */
         puts("Entrez le nom de la carte a jouer - tapez 'N' pour terminer :");
         retour_scanf = scanf("%2s", card_name);
 
-        if (retour_scanf == 0) {
+        if (retour_scanf == 0)
+        {
             mon_erreur("Probleme de saisie scanf\n");
         }
 
@@ -129,7 +146,9 @@ int main() {
             /* affichage de la valeur de cette version */
             printf("For the second version with char values only:\nThe card value is: %d\nLa chaine rentree est %s \n\n",
                    valeur_2emeversion, card_name);
-        } else on_continue = 0;
+        }
+        else
+            on_continue = 0;
 
         vider_buffer(); /* on vide le buffer pour la prochaine saisie */
 
@@ -143,11 +162,12 @@ int main() {
 /*        d'erreur  mon_erreur et les remplacer par exemple par quelque chose du genre :                           */
 /*         fprintf(stderr,"---\nERREUR carte fausse: %d\n----\n",val);                                             */
 
-
 /* Fonction permettant de vider le buffer */
-void vider_buffer() {
+void vider_buffer()
+{
     int c = 0;
-    while (c != '\n' && c != EOF) {
+    while (c != '\n' && c != EOF)
+    {
         c = getchar();
     }
 }

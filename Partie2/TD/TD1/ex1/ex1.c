@@ -1,19 +1,19 @@
 /**
- * Programme calculant la diff�rence entre la moyenne arithm�tique et
- * g�om�trique de 2 nombres
- *
- * Version utilisant une fonction pour le calcul de la difference
- *
- * Cette version prend les valeurs sur la ligne de commande
- * les versions avec valeurs fix�es ou lisant les valeurs au clavier
- * sont indiqu�es en commentaires en bas du fichier
- *
- * historique:
- *  creation le 23/01/2014 - A. Habrard
- *  MAJ      le 19/01/2018 - A. Habrard - modif usage
- *           le 24/01/2022 - A. Habrard - modif verification positivit� nombres donn�s en ligne de commande + usage
-                                        - modif verification scanf
- *
+  * Programme calculant la diff�rence entre la moyenne arithm�tique et
+   * g�om�trique de 2 nombres
+   *
+   * Version utilisant une fonction pour le calcul de la difference
+   *
+   * Cette version prend les valeurs sur la ligne de commande
+   * les versions avec valeurs fix�es ou lisant les valeurs au clavier
+   * sont indiqu�es en commentaires en bas du fichier
+   *
+   * historique:
+   *  creation le 23/01/2014 - A. Habrard
+   *  MAJ      le 19/01/2018 - A. Habrard - modif usage
+   *           le 24/01/2022 - A. Habrard - modif verification positivit� nombres donn�s en ligne de commande + usage
+                                          - modif verification scanf
+  *
  * Note:
  *il n'est pas utile de prendre la valeur absolue car
  *(sqrt(a)-sqrt(b))^2=a+b-2sqrt(a*b)>=0 et donc (a+b)/2>=sqrt(a*b)
@@ -31,14 +31,14 @@ void calcule_difference(double a, double b);
 void usage(char *s);
 
 /*definition fonction usage */
-void usage(char *s) {
-    fprintf(stderr,
-            "Erreur usage: %s a b\n\ta et b 2 reels positifs, calcule la difference entre la moyenne arithmetique et geometrique de a et b\n",
-            s);
+void usage(char *s)
+{
+    fprintf(stderr, "Erreur usage: %s a b\n\ta et b 2 reels positifs, calcule la difference entre la moyenne arithmetique et geometrique de a et b\n", s);
 }
 
 /*definition fonction calcule_difference*/
-void calcule_difference(double a, double b) {
+void calcule_difference(double a, double b)
+{
     double moyenne_a = (a + b) / 2.0;
     double moyenne_g = sqrt(a * b);
 
@@ -49,10 +49,12 @@ void calcule_difference(double a, double b) {
 }
 
 /* Fonction main */
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[])
+{
     double a, b;
 
-    if (argc != 3) {
+    if (argc != 3)
+    {
         usage(argv[0]);
         return EXIT_FAILURE;
     }
@@ -62,7 +64,8 @@ int main(int argc, char *argv[]) {
 
     if (a >= 0 && b >= 0)
         calcule_difference(a, b);
-    else {
+    else
+    {
         usage(argv[0]);
         printf("L'un des nombres au moins est negatif, a:%f, b:%f\n", a, b);
         exit(EXIT_FAILURE);
@@ -80,13 +83,13 @@ int main(int argc,char * argv[])
 
   printf("Entrez le nombre reel a :\n");
   if(scanf("%lf",&a)!=1){
-     fprintf(stderr,"Erreur saisie nombre a\n");
-     return EXIT_FAILURE;
+    fprintf(stderr,"Erreur saisie nombre a\n");
+    return EXIT_FAILURE;
   }
   printf("Entrez le nombre reel b :\n");
   if(scanf("%lf",&b)!=1){
-     fprintf(stderr,"Erreur saisie nombre a\n");
-     return EXIT_FAILURE;
+    fprintf(stderr,"Erreur saisie nombre a\n");
+    return EXIT_FAILURE;
   }
 
   if(a>=0 && b>=0)
