@@ -7,7 +7,6 @@ Ordre des exercices :
 3. [Le jeu du pendu](jeu_pendu/)
 4. [Chiffres en caractères](chiffres_en_caracteres/)
 
-
 ## L'instruction `switch`
 
 Afin d'éviter les imbrications d'instruction `if`, il existe une instruction pour traiter plusieurs cas "en même temps" : le `switch ... case`. La syntaxe est la suivante :
