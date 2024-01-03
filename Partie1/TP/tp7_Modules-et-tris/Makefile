@@ -1,8 +1,8 @@
 CC= gcc
 OPTIONS= -W -Wall -std=c89 -pedantic -O3
 
-toto : main.o recherche.o tri.o lecture.o
-	$(CC) $(OPTIONS) recherche.o tri.o lecture.o main.o -o toto
+prog : main.o recherche.o tri.o lecture.o
+	$(CC) $(OPTIONS) recherche.o tri.o lecture.o main.o -o prog
 main.o : main.c lecture.h
 	$(CC) $(OPTIONS) -c main.c
 recherche.o : recherche.c lecture.h
