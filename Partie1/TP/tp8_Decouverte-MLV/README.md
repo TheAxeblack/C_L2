@@ -12,4 +12,3 @@ Les exercices suivants sont inspirés d'un TP proposé par [Nicolas Borie](www-i
 
 1. [Découverte de la bibliothèque MLV](rectangle/)
 2. [Le jeu de chomp](chomp/)
-3. 
