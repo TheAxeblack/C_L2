@@ -7,4 +7,5 @@ Un participant peut s'inscrire indépendament aux 2 repas proposés : déjeuner 
 + Définir un nouveau type `participant` qui inclut, son nom, son prénom, ainsi que toute autre informations nécessaires à son inscription selon les critères définis ci-dessus. On privilégiera une structure contenant un nombre minimal de champs.
 + Définir un nouveau type `tabPart` qui est un tableau de 100 éléments de type `participant`.
 + Définir une fonction `nb2etoiles` qui, pour un argument de type `tabPart` donné, affiche le nom et le prénom des personnes ayant choisi de réserver un hôtel 2 étoiles.
-+ Définir une fonction `nbDej` qui, pour un argument de type `tabPart` donné, affiche le nombre de personnes ayant choisi de réserver le déjeuner.
++ Définir une fonction `nbDej` qui, pour un argument de type `tabPart` donné, retourne le nombre de déjeuner à prévoir.
++ Définir une fonction `montant` qui calcule, pour un participant donné, le montant de sa facture.
