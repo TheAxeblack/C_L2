@@ -52,3 +52,8 @@ Pour plus de détails sur le langage C, il existe un excellent cours très compl
 - [TD1](Partie2/TD/TD1/)
 
 #### TP (Travaux Pratiques)
+
+- [tp1](Partie2/TP/tp1/)
+- [tp2](Partie2/TP/tp2/)
+- [tp3](Partie2/TP/tp3/)
+- [tp4](Partie2/TP/tp4/)
