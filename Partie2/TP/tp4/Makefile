@@ -3,31 +3,36 @@ OPTIONS = -W -Wall -g -std=c89 -pedantic -O3 `pkg-config --cflags MLV`
 DEBUG = -W -Wall -pedantic -std=c89 -g `pkg-config --cflags MLV`
 MLV = `pkg-config --libs-only-l MLV` `pkg-config --libs-only-other --libs-only-L MLV`
 
-TXT_FILES = $(wildcard src/*.c)
-DAT_FILES = $(patsubst src/%.c, obj/%.o, $(TXT_FILES))
-DEB_FILES = $(patsubst src/%.c, obj/%.do, $(TXT_FILES))
+SRC_DIR = src
+OBJ_DIR = obj
+INC_DIR = inc
+BIN_DIR = bin
 
-all:
-	make bin/prog
-	make bin/debug
+TXT_FILES = $(wildcard $(SRC_DIR)/*.c)
+DAT_FILES = $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.o, $(TXT_FILES))
+DEB_FILES = $(patsubst $(SRC_DIR)/%.c, $(OBJ_DIR)/%.do, $(TXT_FILES))
 
-prog:
-	bin/prog
+.PHONY: all clean prog debug
 
-debug:
-	bin/debug
+all: $(BIN_DIR)/prog $(BIN_DIR)/debug
 
-bin/prog: $(DAT_FILES)
-	$(CC) $(OPTIONS) $(DAT_FILES) -o $@ $(MLV)
+prog: $(BIN_DIR)/prog
+	@$<
 
-bin/debug: $(DEB_FILES)
-	$(CC) $(DEBUG)  $(DEB_FILES) -o $@ $(MLV)
+debug: $(BIN_DIR)/debug
+	@$<
 
-obj/%.do: src/%.c
-	$(CC) $(DEBUG)  -Iinc -c $< -o $@
+$(BIN_DIR)/prog: $(DAT_FILES)
+	@$(CC) $(OPTIONS) $^ -o $@ $(MLV)
 
-obj/%.o : src/%.c
-	$(CC) $(OPTIONS) -Iinc -c $< -o $@
+$(BIN_DIR)/debug: $(DEB_FILES)
+	@$(CC) $(DEBUG) $^ -o $@ $(MLV)
 
-clean :
-	rm -rf obj/* */*~ bin/*
+$(OBJ_DIR)/%.do: $(SRC_DIR)/%.c
+	@$(CC) $(DEBUG) -I$(INC_DIR) -c $< -o $@
+
+$(OBJ_DIR)/%.o : $(SRC_DIR)/%.c
+	@$(CC) $(OPTIONS) -I$(INC_DIR) -c $< -o $@
+
+clean:
+	@rm -rf $(OBJ_DIR)/*.o $(OBJ_DIR)/*.do $(BIN_DIR)/*
