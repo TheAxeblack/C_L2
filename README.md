@@ -34,12 +34,12 @@ gcc -W -Wall -std=c89 -pedantic -O3 <nom_fichier.c> -o <nom_executable> -lm
 
 - [tp1_Premiers_programmes](Partie1/TP/tp1_Premiers_programmes)
 - [tp2_Boucles](Partie1/TP/tp2_Boucles)
-- [tp3_Nbre_mystere](Partie1/TP/tp3_Nbre_mystere)
+- [tp3_Nombre_mystère](Partie1/TP/tp3_Nbre_mystere)
 - [tp4_Tableaux_et_fonctions](Partie1/TP/tp4_Tableaux_et_fonctions)
 - [tp5_chaines-caracteres](Partie1/TP/tp5_chaines_caracteres/)
 - [tp6_Structures-de-donnees-simples](Partie1/TP/tp6_Structures_donnees_simples/)
 - [tp7_Programmation-modulaire-et-tris](Partie1/TP/tp7_Modules-et-tris/)
-- [tp8_Decouverte-MLV (blibliothèque graphique)](Partie1/TP/tp8_Decouverte-MLV/)
+- [tp8_Découverte-MLV (bibliothèque graphique)](Partie1/TP/tp8_Decouverte-MLV/)
 
 ### Partie 2 - Manipulation des pointeurs et TAD (Types Abstraits de Données)
 
@@ -53,7 +53,7 @@ Pour plus de détails sur le langage C, il existe un excellent cours très compl
 
 #### TP (Travaux Pratiques)
 
-- [tp1](Partie2/TP/tp1/)
+- [tp1](Partie2/TP/tp1/) 
 - [tp2](Partie2/TP/tp2/)
 - [tp3](Partie2/TP/tp3/)
 - [tp4](Partie2/TP/tp4/)
