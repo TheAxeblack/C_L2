@@ -1,4 +1,4 @@
-## 2 Fonction de Ackermann
+## Fonction de Ackermann
 
 La fonction de Ackermann est une fonction à deux arguments définie récursivement de la manière suivante :
 
